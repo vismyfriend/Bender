@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./styles.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- адаптация ширины экрана для девайсов -->
+    <!-- <link rel="shortcut icon" type="image/jpg" href="./images/ball 10.png"> -->
+    <title>Bender</title>
+</head>
+
+<body class="body">
+    <header class="header">
+        <a href="https://bababum95.github.io/vinchento/">
+            <button class="header__back">← Games</button>
+            <!-- неразрывной пробел option + space -->
+        </a>
+    </header>
+    <main class="main">
+        <div class="container-mistake">
+            <!-- <div class="lives-four">
+                <img src="./images/lives.png" alt="lives">
+            </div> -->
+
+            <h3 class="task-eng">Oops!</h3>
+            <p class="task-ru-mistake">Без паники, давайе разбираться :</p>
+            <p class="russian-hint mistaken"></p>
+            <p class="sentence-correct"> Ответ робота: <br> A robot wants to drink and eat</p>
+            <p class="sentence user-answer"> Ваш ответ: <br> A robot wants to eat and drink</p>
+
+            <div class="buttons">
+                <button class="unfair"> I don't agree! Мой ответ тоже верный. It is not a mistake </button>
+                <button class="fair"> Ok. I agree. Погнали дальше!</button>
+            </div>
+            <button class="screenshot hide"> Ваша жизнь восстановлена! Please, сделайте скриншот этого экрана и отправьте в телеграм @vismyfriend Thank you! Ok.</button>
+
+        </div>
+        <div class="container-one">
+            <div class="lives">
+                <img src="./images/lives.png" alt="lives">
+            </div>
+            <h3 class="task-eng">Help a robot to speak English</h3>
+            <p class="task-ru">Составь предложение из всех слов</p>
+            <ul class="words">
+             
+          
+            </ul>
+            <p class="sentence input-sentence"></p>
+            <div class="buttons">
+                <!-- <button class="delete"> delete</button> -->
+                <button class="hint"> показать подсказку</button>
+                <button class="cheat"> cheat</button>
+            </div>
+            <p class="russian-hint hint-input"></p>
+            <p class="correct-counter"></p>
+        </div>
+        <img class="bender" src="./images/bender.png" alt="bender">
+    </main>
+   <template class="template"> 
+    <li class="word"></li>
+</template>
+<!-- делали такое!!! Find this-->
+<script type="module" src="./index.js"></script>
+</body>
+
+</html>
