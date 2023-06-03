@@ -1,23 +1,47 @@
 export const test = [
     {
-        ru: "Сидим в гараже мы и пьем квас с Эндрю",
-        eng: "We are sitting behind garages and drinking kvas with Andrew"
+        ru: "кто-то очень умный",
+        eng: "somebody is very clever"
     },
     {
-        ru: "6 7 8 9",
-        eng: "six seven eight nine"
+        ru: "какого цвета твои глаза?",
+        eng: "what color are your eyes?"
     },
     {
-        ru: "6 7 8 9",
-        eng: "six seven eight nine"
+        ru: "Мне это очень нравится",
+        eng: "I like it very much"
     },
     {
-        ru: "6 7 8 9",
-        eng: "six seven eight nine"
+        ru: "Ты мне нравишься",
+        eng: "I like you very much"
     },
     {
-        ru: "6 7 8 9",
-        eng: "six seven eight nine"
+        ru: "Я не деляю домашку",
+        eng: "I don't do homework"
+    },
+    {
+        ru: "Почему ты никогда не помогаешь мне?",
+        eng: "why do you never help me?"
+    },
+    {
+        ru: "Эта игра прикольная",
+        eng: "this game is cool"
+    },
+    {
+        ru: "Мой учитель любит меня",
+        eng: "my teacher likes me"
+    },
+    {
+        ru: "Это последнее предложение?",
+        eng: "is this the last sentence?"
+    },
+    {
+        ru: "Эта игра прикольная?",
+        eng: "is this game cool?"
+    },
+    {
+        ru: "Эндрю не живёт за гаражами!",
+        eng: "Andrew does not live behind the garages"
     },
 ]
 // option + space - неразрывной пробел
