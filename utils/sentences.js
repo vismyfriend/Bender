@@ -1,7 +1,7 @@
 export const test = [
     {
-        ru: "1 2 3 4 5",
-        eng: "one two three four five"
+        ru: "Сидим в гараже мы и пьем квас с Эндрю",
+        eng: "We are sitting behind garages and drinking kvas with Andrew"
     },
     {
         ru: "6 7 8 9",
