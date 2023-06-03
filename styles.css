@@ -248,7 +248,7 @@
 .bender {
     margin-left: calc((100% - 221px) / 2 );
 }
-@media screen and (min-height:735px){
+@media screen and (min-height:650px){
     .bender {
     position:fixed;
     left: 0;
