@@ -1,5 +1,13 @@
 export const test = [
     {
+        ru: "Давайте начнем с легкого задания",
+        eng: "Let's start with the easy task"
+    },
+    {
+        ru: "Это действительно легко в начале",
+        eng: "This is really easy in the beginning"
+    },
+    {
         ru: "кто-то очень умный",
         eng: "somebody is very clever"
     },
@@ -16,7 +24,7 @@ export const test = [
         eng: "I like you very much"
     },
     {
-        ru: "Я не деляю домашку",
+        ru: "Я не делаю домашку",
         eng: "I don't do homework"
     },
     {
@@ -24,24 +32,40 @@ export const test = [
         eng: "why do you never help me?"
     },
     {
-        ru: "Эта игра прикольная",
-        eng: "this game is cool"
+        ru: "Эта игра прикольная?",
+        eng: "this game is cool ?"
+    },
+    {
+        ru: "Эта игра очень прикольная !",
+        eng: "this game is very cool !"
     },
     {
         ru: "Мой учитель любит меня",
         eng: "my teacher likes me"
     },
     {
-        ru: "Это последнее предложение?",
-        eng: "is this the last sentence?"
+        ru: "Это последнее предложение ?",
+        eng: "is this the last sentence ?"
     },
     {
-        ru: "Эта игра прикольная?",
-        eng: "is this game cool?"
+        ru: "Винсент делает для меня игры",
+        eng: "Vincent makes games for me"
     },
     {
-        ru: "Эндрю не живёт за гаражами!",
-        eng: "Andrew does not live behind the garages"
+        ru: "Эндрю помогает Винсенту делать игры",
+        eng: "Andrew helps Vincent to make games"
+    },
+    {
+        ru: "У меня самые лучшие друзья !",
+        eng: "I have the best friends !"
+    },
+    {
+        ru: "Просто сделай это, тренируй свой английский везде",
+        eng: "Just do it , train your English everywhere"
+    },
+    {
+        ru: "Спасибо за то, что играете в эту игру со мной",
+        eng: "thank you for playing this game with me"
     },
 ]
 // option + space - неразрывной пробел
