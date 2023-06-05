@@ -102,6 +102,9 @@ fair.addEventListener("click", () => {
 })
 hint.addEventListener("click", () => {
     russianHint.textContent = test[n].ru
+    setTimeout(() => {
+        russianHint.textContent = ""
+    }, 4000)
 })
 cheat.addEventListener("click", () => {
     russianHint.textContent = test[n].eng
