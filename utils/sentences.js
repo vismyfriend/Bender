@@ -20,8 +20,12 @@ export const test = [
         eng: "I like it very much"
     },
     {
-        ru: "Ты мне нравишься",
-        eng: "I like you very much"
+        ru: "Моей подруге это сильно нравится",
+        eng: "My friend likes it a lot"
+    },
+    {
+        ru: "Ты всем очень сильно нравишься",
+        eng: "Everybody likes you very much"
     },
     {
         ru: "Я не делаю домашку",
@@ -64,9 +68,14 @@ export const test = [
         eng: "Just do it , train your English everywhere"
     },
     {
+        ru: "Каждый ошибается, это жизнь",
+        eng: "Everyone makes mistakes , this is life."
+    },
+    {
         ru: "Спасибо за то, что играете в эту игру со мной",
         eng: "thank you for playing this game with me"
     },
+    
 ]
 // option + space - неразрывной пробел
 
