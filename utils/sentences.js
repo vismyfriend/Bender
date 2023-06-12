@@ -1,11 +1,7 @@
 export const test = [
     {
         ru: "Давайте начнем с легкого задания",
-        eng: "Let's start with the easy task"
-    },
-    {
-        ru: "Это действительно легко в начале",
-        eng: "This is really easy in the beginning"
+        eng: "Let's start a new game"
     },
     {
         ru: "кто-то очень умный",
@@ -16,8 +12,16 @@ export const test = [
         eng: "what color are your eyes?"
     },
     {
+        ru: "Это действительно легко в начале",
+        eng: "This is really easy in the beginning"
+    },
+    {
         ru: "Мне это очень нравится",
         eng: "I like it very much"
+    },
+    {
+        ru: "Пффф, это слишком легко",
+        eng: "Pfff, it is too easy"
     },
     {
         ru: "Моей подруге это сильно нравится",
@@ -37,11 +41,11 @@ export const test = [
     },
     {
         ru: "Эта игра прикольная?",
-        eng: "this game is cool ?"
+        eng: "is this game cool ?"
     },
     {
-        ru: "Эта игра очень прикольная !",
-        eng: "this game is very cool !"
+        ru: "Эта игра такая прикольная !",
+        eng: "this game is so cool !"
     },
     {
         ru: "Мой учитель любит меня",
@@ -57,7 +61,7 @@ export const test = [
     },
     {
         ru: "Эндрю помогает Винсенту делать игры",
-        eng: "Andrew helps Vincent to make games"
+        eng: "Andrew helps Vincent make games"
     },
     {
         ru: "У меня самые лучшие друзья !",
@@ -70,6 +74,14 @@ export const test = [
     {
         ru: "Каждый ошибается, это жизнь",
         eng: "Everyone makes mistakes , this is life."
+    },
+    {
+        ru: "Два предложения и конец!",
+        eng: "Two sentences and the end!"
+    },
+    {
+        ru: "А вот попробуй без подсказки в этот раз!",
+        eng: "And try to do it without a hint now"
     },
     {
         ru: "Спасибо за то, что играете в эту игру со мной",
