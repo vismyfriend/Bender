@@ -152,6 +152,9 @@
     margin: 6px 15px;
     padding: 6px;
 }
+.sentence.wrong {
+    color: red;
+}
 .sentence-correct {
 
     background: #7ECA7C;
@@ -159,6 +162,7 @@
     min-height: 30px;
     margin: 5px 15px;
     padding: 6px;
+    color: white;
 }
 .buttons {
     display: flex;
@@ -194,6 +198,9 @@
     margin-right: 13px;
     /* изначальные настройки */
     transition: all 0.4s ease-in-out;
+    position: absolute;
+    top: 267px;
+
 }
 .screenshot.hide {
     max-height: 0;
@@ -248,8 +255,8 @@
 .correct-counter {
     position: absolute;
     bottom: 5px;
-    right: 26px;
-    color: #FFF;
+    right: 4px;
+    color: #040404;;
     font-size: 15px;
 }
 .bender {
@@ -259,7 +266,7 @@
     .bender {
     position:fixed;
     left: 0;
-    bottom: 0;
+    bottom: 10;
     }
 }
 @media screen and (max-width:520px){

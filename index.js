@@ -44,13 +44,14 @@ function renderWords() {
                         // console.log("ok")
                         score += 1
                         // score = score + 1
-                        points.textContent = `верно: ${score}`
+                        points.textContent = `верно:  ${score} / ${test.length}`
                         nextSentence()
 
                     } else {
                         russianHintMistake.textContent = test[n].ru
                         correctAnswer.textContent = sentence
                         userAnswer.textContent = inputSentence.textContent
+                        userAnswer.classList.add("wrong")
                         containerMistake.classList.add("show")
                         life = life - 1
                         lives.style.width = `${life * 31}px`
@@ -71,7 +72,7 @@ function renderWords() {
 
 }
 function gameOver() {
-    inputSentence.textContent = `Вы набрали ${score}`
+    inputSentence.textContent = `Крутец-молодец! Bender likes you! Даже наверное не жульничали, да же?`
 
 }
 function nextSentence() {
@@ -85,6 +86,8 @@ function nextSentence() {
     }
 }
 unfair.addEventListener("click", () => {
+    unfair.disabled = true 
+    fair.disabled = true 
     screenshot.classList.remove("hide")
     life = life + 1
     lives.style.width = `${life * 31}px`
@@ -94,6 +97,17 @@ unfair.addEventListener("click", () => {
 })
 fair.addEventListener("click", () => {
     containerMistake.classList.remove("show")
+    if (life === 0) {
+        gameOver()
+    } else {
+        nextSentence()
+    }
+})
+screenshot.addEventListener("click", () => {
+    containerMistake.classList.remove("show")
+    fair.disabled = false 
+    
+
     if (life === 0) {
         gameOver()
     } else {

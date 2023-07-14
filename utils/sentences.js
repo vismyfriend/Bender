@@ -1,11 +1,79 @@
 export const test = [
+    // {
+    //     ru: "закоментируй это тестовое предложение проверки ",
+    //     eng: "These is a test sentence it is long. Comment it"
+    // },
     {
-        ru: "Давайте начнем с легкого задания",
+        ru: "Я не робот.",
+        eng: "I am not a robot."
+    },
+    {
+        ru: "Это хороший робот",
+        eng: "It is a good robot"
+    },
+    {
+        ru: "Я могу говорить на английском",
+        eng: "I can speak English."
+    },
+    {
+        ru: "Я умею говорить на английском?",
+        eng: "Can I speak English?"
+    },
+    {
+        ru: "Робот не умеет говорить на английском",
+        eng: "A robot cannot speak English."
+    },
+    {
+        ru: "Мы можем помочь ему говорить",
+        eng: "We can help him speak."
+    },
+    {
+        ru: "Английский не очень сложный",
+        eng: "English is not very hard"
+    },
+    {
+        ru: "Мне очень сильно нравится английский",
+        eng: "I like English very much"
+    },
+    {
+        ru: "Робот очень сильно любит английский",
+        eng: "A robot loves English very much"
+    },
+    {
+        ru: "Мне не очень нравятся роботы",
+        eng: "I like robots not very much"
+    },
+    {
+        ru: "Винсент мне очень сильно нравится",
+        eng: "I like Vincent very much"
+    },
+    {
+        ru: "Это новая игра",
+        eng: "It is a new game"
+    },
+    {
+        ru: "Это не старая игра",
+        eng: "It is not an old game"
+    },
+    {
+        ru: "Я не старый",
+        eng: "We are not old we are young"
+    },
+    {
+        ru: "Мы очень классные",
+        eng: "We are very cool"
+    },
+    {
+        ru: "Кто-то очень умный",
+        eng: "somebody is very clever"
+    },
+    {
+        ru: "Давайте начнем новую игру",
         eng: "Let's start a new game"
     },
     {
-        ru: "кто-то очень умный",
-        eng: "somebody is very clever"
+        ru: "Мне нравятся интересные игры",
+        eng: "I like interesting games"
     },
     {
         ru: "какого цвета твои глаза?",
@@ -13,31 +81,35 @@ export const test = [
     },
     {
         ru: "Это действительно легко в начале",
-        eng: "This is really easy in the beginning"
+        eng: "This is really easy in the beginning"
     },
     {
-        ru: "Мне это очень нравится",
-        eng: "I like it very much"
+        ru: "Мне это очень очень очень нравится",
+        eng: "I like it very very very much"
     },
     {
-        ru: "Пффф, это слишком легко",
-        eng: "Pfff, it is too easy"
+        ru: "Пффф, это легко, я умный!",
+        eng: "Pfff, it is easy, I am smart!"
     },
     {
         ru: "Моей подруге это сильно нравится",
         eng: "My friend likes it a lot"
     },
     {
-        ru: "Ты всем очень сильно нравишься",
-        eng: "Everybody likes you very much"
+        ru: "Все очень сильно любят Инглиш",
+        eng: "Everybody likes English very much"
     },
     {
         ru: "Я не делаю домашку",
         eng: "I don't do homework"
     },
     {
-        ru: "Почему ты никогда не помогаешь мне?",
-        eng: "why do you never help me?"
+        ru: "Ты никогда не помогаешь мне",
+        eng: "You never help me"
+    },
+    {
+        ru: "Ты - ленивая жопка",
+        eng: "You are a lazy bottom"
     },
     {
         ru: "Эта игра прикольная?",
@@ -68,24 +140,12 @@ export const test = [
         eng: "I have the best friends !"
     },
     {
-        ru: "Просто сделай это, тренируй свой английский везде",
-        eng: "Just do it , train your English everywhere"
-    },
-    {
         ru: "Каждый ошибается, это жизнь",
         eng: "Everyone makes mistakes , this is life."
     },
     {
-        ru: "Два предложения и конец!",
-        eng: "Two sentences and the end!"
-    },
-    {
-        ru: "А вот попробуй без подсказки в этот раз!",
-        eng: "And try to do it without a hint now"
-    },
-    {
         ru: "Спасибо за то, что играете в эту игру со мной",
-        eng: "thank you for playing this game with me"
+        eng: "thank you for playing this game with me!"
     },
     
 ]
