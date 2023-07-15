@@ -117,13 +117,13 @@ screenshot.addEventListener("click", () => {
 hint.addEventListener("click", () => {
     russianHint.textContent = test[n].ru
     setTimeout(() => {
-        russianHint.textContent = ""
+        russianHint.textContent = "нажми 👆 на эту кнопку, если не можешь догадаться какое предложение можно составить из предложенных слов"
     }, 4000)
 })
 cheat.addEventListener("click", () => {
     russianHint.textContent = test[n].eng
     setTimeout(() => {
-        russianHint.textContent = ""
+        russianHint.textContent = "нажми 👆 на эту кнопку, если не можешь догадаться какое предложение можно составить из предложенных слов"
     }, 4000)
     // милисекунды 
 })
