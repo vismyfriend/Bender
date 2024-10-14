@@ -3,66 +3,694 @@
 
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="./styles/style.css">
+    <!-- 0003 ниже две строки уточнить у Andrew откуда это появилось, что мы нажали?-->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- адаптация ширины экрана для девайсов -->
-    <!-- <link rel="shortcut icon" type="image/jpg" href="./images/ball 10.png"> -->
-    <title>Bender</title>
+    <link rel="shortcut icon" type="image/jpg" href="./images/favicon-32x32.png">
+    <title>vismyfriend</title>
 </head>
 
+
 <body class="body">
+    <div class="wallpaper">
+        <!-- <img src="/images/springwallpaper.jpg" alt="wallpaper"> -->
+        <!-- <img src="/images/background agent.jpg" alt="wallpaper"> -->
+    </div>
+    <!-- включить нкосмос - убрать none -->
+    <div class="fullscreen-bg none">
+
+        <video loop="" muted="" autoplay="" poster="./video/starsBGfade.mp4" class="backgroundVideo">
+            <source src="./video/starsBGfade.mp4" type="video/mp4">
+            <!-- <source src="video/plane.webm" type="video/webm"> -->
+        </video>
+    </div>
+ 
+    </div>
+
     <header class="header">
-        <a href="https://bababum95.github.io/vinchento/">
-            <button class="header__back">← Games</button>
-            <!-- неразрывной пробел option + space -->
-        </a>
+        <div class="headerContainer1">
+            <!-- <p class="headerPageReoad"> перезагрузить ❌ </p> -->
+            <button class="headerButtons opacityZero resetPage none">🕵️‍♀️ перезагрузить</button>
+                <button class="headerButtons opacityZero backToChoosingTheMissions">  🔎 вернуться к выбору миссий
+                    ❌ </button>
+        </div>
     </header>
+    <p class="usedCheatsText">нажимай на карточку <br> и читай вопрос вслух</p>
     <main class="main">
-        <div class="container-mistake">
-            <!-- <div class="lives-four">
-                <img src="./images/lives.png" alt="lives">
+        <div class="mainContainerIntroAnd2games">
+            <!-- кнопка для приветственного аудио трека (музыка) когда её нет пропадает иконка отклчить звук -->
+            <!-- <button class="helloMusicStartButton">Hello, Special Agent <br> привет, спЭшл эЙджент</button> -->
+            <!-- я ее пока закомментил, потому что надоедало каждый раз ее нажимать при входе в приложение -->
+            <div class="popupMissionsAndSets">
+                <div class="starsEmoji">
+                    <img src="./images/stars.png" alt="starsEmoji">
+                </div>
+                <!-- <h3 class="popupMissionsAndSets__title">It's Nice 2 c u, S.A.</h3> -->
+                <h3 class="popupMissionsAndSets__title">S.P.E.C.I.A.L agent</h3>
+                <p class="allSetsStyle popupMissionsAndSets__chosen-set"></p>
+                <button class="gameFindPairsButtonTry-again hidden"> Yes! </button>
+                <p class="popupMissionsAndSets__description">👈/ с п Э ш л / 🕵️‍♀️ / Э й д ж н т /👉 <br>
+                    Вводи название миссии или выбирай:
+                </p>
+                <input type="text" class="userSearchesForMission userInput" placeholder=" 🔎 find mission..."
+                    autocomplete="none" aria-autocomplete="none">
+                <ul class="popupMissionsAndSets__sets">
+                    <button class="scroll-left"></button>
+                    <button class="scroll-right"></button>
+                    <!-- <li class="popupMissionsAndSets__set green" data-set="devmode1">devmode 1</li>
+                    <li class="popupMissionsAndSets__set green" data-set="devmode2">devmode 2</li>
+                    <li class="popupMissionsAndSets__set green" data-set="devmode3">devmode 3</li> -->
+                    <li class="popupMissionsAndSets__set green" data-set="digits1">from 0 to 9<br> от ...   до ...</li>
+                    <li class="popupMissionsAndSets__set green" data-set="read1">произношение</li>
+                    <li class="popupMissionsAndSets__set blue" data-set="abcde">ABCDE</li>
+                    <li class="popupMissionsAndSets__set pink" data-set="femaleNames">Girls' names <br> гЁрлз</li>
+                    <li class="popupMissionsAndSets__set blue" data-set="maleNames">Boys' names<br> бОйз</li>
+                    <li class="popupMissionsAndSets__set green" data-set="alphabeta1">Alphabet / Элфэбэт /</li>
+                    <li class="popupMissionsAndSets__set " data-set="cars1">car numbers</li>
+                    <li class="popupMissionsAndSets__set " data-set="emails">E-mails emails</li>
+                    <li class="popupMissionsAndSets__set " data-set="alphabeta2">Alphabet <br> уровень A2 </li>
+                    <li class="popupMissionsAndSets__set" data-set="m001m">001</li>
+                    <li class="popupMissionsAndSets__set " data-set="alphabetb1">Alphabet <br> уровень B1</li>
+                    <li class="popupMissionsAndSets__set " data-set="alphabetc1">Alphabet <br> уровень C1</li>
+                    <li class="popupMissionsAndSets__set comingSoon" data-set="devmode0">настройки</li>
+                    <li class="popupMissionsAndSets__set blue" data-set="areamis0">are ? am ? is ?</li>
+                    <li class="popupMissionsAndSets__set blue" data-set="ordinalnumbersq">who is <br> the first ... ?</li>
+                    <li class="popupMissionsAndSets__set blue" data-set="areamis1">are, am, is <br>или  нет ?</li>
+                    <li class="popupMissionsAndSets__set" data-set="roles1"> Roles 1 / рОулз /</li>
+                    <li class="popupMissionsAndSets__set" data-set="roles2"> Roles 2 / рОулз /</li>
+                    <li class="popupMissionsAndSets__set" data-set="articles0">Articles 0 <br>A / - </li>
+                    <li class="popupMissionsAndSets__set" data-set="articles01">Articles 1 <br>A / An</li>
+                    <li class="popupMissionsAndSets__set" data-set="articles02">Articles 2 <br>A / An / -</li>
+                    <li class="popupMissionsAndSets__set" data-set="articles03">Articles 3 <br>A / An / The</li>
+                    <li class="popupMissionsAndSets__set" data-set="starlightarticles">Star light 5 <br>articles</li>
+                    <li class="popupMissionsAndSets__set pink" data-set="onetwenty">one twenty questions</li>
+                    <li class="popupMissionsAndSets__set pink" data-set="professions1">Professions 1</li>
+                    <li class="popupMissionsAndSets__set pink" data-set="onehundredtwenty">one hundred <br> twenty 120</li>
+                    <li class="popupMissionsAndSets__set green" data-set="whenDoYouQ">When do you...?<br>Questions</li>
+                    <li class="popupMissionsAndSets__set yellow" data-set="whenDoYouA">When do you...? <br>Answers</li>
+                    <li class="popupMissionsAndSets__set " data-set="howWasIt">How was it? <br> questions</li>
+                    <li class="popupMissionsAndSets__set " data-set="itWas">How was it? <br> Answers</li>
+                    <li class="popupMissionsAndSets__set " data-set="favorite1">What's your <br>favorite...</li>
+                    <li class="popupMissionsAndSets__set pink" data-set="shortenings1">WTF?</li>
+                    <li class="popupMissionsAndSets__set pink" data-set="garagetest1">garage test</li>
+                    <li class="popupMissionsAndSets__set pink" data-set="monsterManeskin">monster Maneskin</li>
+                    <li class="popupMissionsAndSets__set " data-set="verbsss">verbsss</li>
+                    <li class="popupMissionsAndSets__set" data-set="daysMonthSeasons">Days Months Seasons</li>
+                    <li class="popupMissionsAndSets__set" data-set="m5bombs">5 bombs</li>
+                    <li class="popupMissionsAndSets__set yellow" data-set="whatDoYouDoNeverA">What do u do<br> never? A.</li>
+                    <li class="popupMissionsAndSets__set green" data-set="whatDoYouDoNeverQ">What do u do<br> never? Q.</li>
+                    <li class="popupMissionsAndSets__set orange" data-set="allPresentSimpleMarkers">WHEN ? <br> Present Simple</li>
+                    <li class="popupMissionsAndSets__set" data-set="m12bombs">12 bombs</li>
+                    <li class="popupMissionsAndSets__set" data-set="words001">Translate <br>переведи </li>
+                    <li class="popupMissionsAndSets__set green" data-set="irregularVerbsAll">irregular <br> verbs</li>
+                    <li class="popupMissionsAndSets__set yellow" data-set="hasOrHave">HAS or HAVE</li>
+                    <li class="popupMissionsAndSets__set yellow" data-set="getToKnow">Get to know</li>
+                    <li class="popupMissionsAndSets__set green" data-set="doyouhaveany">Do you have any ... ?</li>
+                    <li class="popupMissionsAndSets__set blue" data-set="mZero">Mission Zero</li>
+                    <li class="popupMissionsAndSets__set blue" data-set="tobe"> to be не тупи</li>
+                    <li class="popupMissionsAndSets__set blue" data-set="cookingverbs"> cooking Verbs <br> cooking Words</li>
+                    <li class="popupMissionsAndSets__set blue" data-set="first1lesson">проверь <br>память 1</li>
+                    <li class="popupMissionsAndSets__set orange" data-set="first2lessons">проверь <br>память 2</li>
+                    <li class="popupMissionsAndSets__set" data-set="m000">Intro<br> Введение</li>
+                    <li class="popupMissionsAndSets__set blue" data-set="m001">Mission One</li>
+                    <!-- <li class="popupMissionsAndSets__set" data-set="spellingbombs">закрыто на ремонт</li> -->
+                    <li class="popupMissionsAndSets__set blue" data-set="m002">Mission Two</li>
+                    <li class="popupMissionsAndSets__set " data-set="homework002">hw 002 <br>Letters</li>
+                    <li class="popupMissionsAndSets__set blue" data-set="spellAllLetters">Spell <br> all letters</li>
+                    <li class="popupMissionsAndSets__set green" data-set="ach001">Achievement <br>1 numbers</li>
+                    <li class="popupMissionsAndSets__set green" data-set="ach002">Achievement <br>2 numbers</li>
+                    <li class="popupMissionsAndSets__set blue" data-set="m012">12 or 20 ? <br>quiz</li>
+                    <li class="popupMissionsAndSets__set blue" data-set="feb21st">The 21st <br>of February</li>
+                    <li class="popupMissionsAndSets__set yellow" data-set="ach003">Achievement <br>3 numbers</li>
+                    <li class="popupMissionsAndSets__set " data-set="helpArobot">help this robot</li>
+                    <li class="popupMissionsAndSets__set blue" data-set="m003">Mission <br>003</li>
+                    <li class="popupMissionsAndSets__set " data-set="hw3">hw 003 <br>help Bender</li>
+                    <li class="popupMissionsAndSets__set " data-set="benderVerbsB">Bender Verbs B</li>
+                    <li class="popupMissionsAndSets__set " data-set="benderVerbsCDE">Bender Verbs CDE</li>
+                    <li class="popupMissionsAndSets__set " data-set="benderVerbsF">Bender Verbs F</li>
+                    <li class="popupMissionsAndSets__set " data-set="benderVerbsGH">Bender Verbs GH</li>
+                    <li class="popupMissionsAndSets__set " data-set="benderVerbsKLM">Bender Verbs KLM</li>
+                    <li class="popupMissionsAndSets__set " data-set="benderVerbsPR">Bender Verbs PR</li>
+                    <li class="popupMissionsAndSets__set " data-set="benderVerbsS">Bender Verbs S</li>
+                    <li class="popupMissionsAndSets__set " data-set="benderVerbsTUW">Bender Verbs TUW</li>
+                    <li class="popupMissionsAndSets__set " data-set="benderVerbsAll">Bender Verbs All</li>
+                    <li class="popupMissionsAndSets__set blue" data-set="m004">Mission 4 <br> to be +</li>
+                    <li class="popupMissionsAndSets__set yellow" data-set="questionWords1"> Question words 1 </li>
+                    <li class="popupMissionsAndSets__set yellow" data-set="questionWords1">Question words 2</li>
+                    <li class="popupMissionsAndSets__set yellow" data-set="q010"> Questions 10 </li>
+                    <li class="popupMissionsAndSets__set pink" data-set="q020teams"> Questions 20 <br>training</li>
+                    <li class="popupMissionsAndSets__set orange" data-set="q020"> Questions 20 </li>
+                    <li class="popupMissionsAndSets__set yellow" data-set="q021"> Questions 21 </li>
+                    <li class="popupMissionsAndSets__set yellow" data-set="questions210"> Questions 210 <br> fall asleep </li>
+                    <li class="popupMissionsAndSets__set yellow" data-set="questions220"> Questions 220 <br> fall asleep </li>
+                    <li class="popupMissionsAndSets__set yellow" data-set="questions230"> Questions 230 <br> fall asleep </li>
+                    <li class="popupMissionsAndSets__set yellow" data-set="questions240"> Questions 240 <br> painting </li>
+                    <li class="popupMissionsAndSets__set yellow" data-set="questions250"> Questions 250 <br> painting </li>
+                    <li class="popupMissionsAndSets__set yellow" data-set="questions70"> Questions 70 </li>
+                    <li class="popupMissionsAndSets__set yellow" data-set="questions80"> Questions 80 </li>
+                    <li class="popupMissionsAndSets__set yellow" data-set="questions90"> Questions 90 </li>
+                    <li class="popupMissionsAndSets__set yellow" data-set="birthdayquestions"> Birthday Questions </li>
+                    <li class="popupMissionsAndSets__set yellow" data-set="yesno"> Yes No 1</li>
+                    <li class="popupMissionsAndSets__set yellow" data-set="yesno2"> Yes No 2</li>
+                    <li class="popupMissionsAndSets__set yellow" data-set="yesnoQuestions"> Yes No <br> questions</li>
+                    <li class="popupMissionsAndSets__set yellow" data-set="testPart1"> Test part 1 </li>
+                    <li class="popupMissionsAndSets__set yellow" data-set="testPart2"> Test part 2 </li>
+                    <li class="popupMissionsAndSets__set yellow" data-set="testPart3"> Test part 3 </li>
+                    <li class="popupMissionsAndSets__set yellow" data-set="testPart4"> Test part 4 </li>
+                    <li class="popupMissionsAndSets__set yellow" data-set="testPart5"> Test part 5 </li>
+                    <li class="popupMissionsAndSets__set comingSoon" data-set="alphabetc2">доступ по паролю</li>
+                    <li class="popupMissionsAndSets__set" data-set="allCountriesAndCapitals">Countries and <br> capitals</li>
+                    <li class="popupMissionsAndSets__set blue" data-set="firstSecond">1st 2nd 3rd 5th</li>
+                    <li class="popupMissionsAndSets__set " data-set="daysMonth">in Days Months <br> seasons</li>
+                    <li class="popupMissionsAndSets__set orange" data-set="lettersQuiz">Letters Quiz</li>
+                    <li class="popupMissionsAndSets__set orange" data-set="numbersQuiz">Numbers Quiz</li>
+                    <li class="popupMissionsAndSets__set green" data-set="interview1">interview 1</li>
+                    <li class="popupMissionsAndSets__set" data-set="adj01">Adjectives 01</li>
+                    <li class="popupMissionsAndSets__set" data-set="adj02">Adjectives 02</li>
+                    <li class="popupMissionsAndSets__set" data-set="grabit">Grab that thing</li>
+                    <li class="popupMissionsAndSets__set" data-set="examT1">examT1</li>
+                    
+                    <li class="popupMissionsAndSets__set green" data-set="interview2">Interview 2</li>
+                    <li class="popupMissionsAndSets__set blue" data-set="presentSimpleMarkers">Present<br>Markers</li>
+                    <li class="popupMissionsAndSets__set blue" data-set="presentSimple">Present<br>Simple</li>
+                    <li class="popupMissionsAndSets__set " data-set="grammarTo">TO</li>
+                    <li class="popupMissionsAndSets__set " data-set="doOrdoes"> DOES or DO</li>
+                    <li class="popupMissionsAndSets__set " data-set="dontordoesnt"> doesn't (-) don't</li>
+                    <li class="popupMissionsAndSets__set " data-set="doOrdoesAmIsAre"> DOES or DO <br>are am is </li>
+                    <li class="popupMissionsAndSets__set blue" data-set="verbToVerb">V to V</li>
+                    <li class="popupMissionsAndSets__set blue" data-set="verbs001">Verbs 001</li>
+                    <li class="popupMissionsAndSets__set blue" data-set="verbs002">Verbs 002</li>
+                    <li class="popupMissionsAndSets__set blue" data-set="verbs003">Verbs 003</li>
+                    <li class="popupMissionsAndSets__set pink" data-set="test001">test001 </li>
+                    <li class="popupMissionsAndSets__set green" data-set="interview3"> Interview 3</li>
+                    <li class="popupMissionsAndSets__set " data-set="counta1">Count /кАунт/</li>
+                    <li class="popupMissionsAndSets__set" data-set="adjAB">Adj. A-B </li>
+                    <li class="popupMissionsAndSets__set" data-set="threeFormsNVb"> Break broke broken </li>
+                    <li class="popupMissionsAndSets__set" data-set="adjCD">Adj. C-D </li>
+                    <li class="popupMissionsAndSets__set" data-set="adjEF">Adj. E-F </li>
+                    <li class="popupMissionsAndSets__set" data-set="adjGHI">Adj. GHI </li>
+                    <li class="popupMissionsAndSets__set" data-set="adjJKLMN">Adj. JKLMN </li>
+                    <li class="popupMissionsAndSets__set" data-set="adjOPQR">Adj. OPQR </li>
+                    <li class="popupMissionsAndSets__set" data-set="adjS">Adj. S </li>
+                    <li class="popupMissionsAndSets__set" data-set="adjTUVWY">Adj. TUVWY </li>
+                    <li class="popupMissionsAndSets__set" data-set="adjCompareAll">Compare Adj </li>
+                    <li class="popupMissionsAndSets__set" data-set="adjectivesall">All Adjectives </li>
+                    <li class="popupMissionsAndSets__set yellow" data-set="pancakeDay">Pancake days</li>
+                    <li class="popupMissionsAndSets__set" data-set="naughtyVerbsBfindPairs2forms">Irr. Verbs <br> Intro</li>
+                    <li class="popupMissionsAndSets__set" data-set="naughtyVerbsBtnt2forms">irregular <br> verbs  A</li>
+                    <li class="popupMissionsAndSets__set" data-set="naughtyVerbsBquestions3forms">irregular <br> verbs  B</li>
+                    <li class="popupMissionsAndSets__set" data-set="naughtyVerbsCD">irregular <br> verbs  C - D</li>
+                    <li class="popupMissionsAndSets__set" data-set="naughtyVerbsEF">irregular <br> verbs  E - F</li>
+                    <li class="popupMissionsAndSets__set" data-set="naughtyVerbsGH">irregular <br> verbs  G - H</li>
+                    <li class="popupMissionsAndSets__set" data-set="naughtyVerbsKL">irregular <br> verbs  K - L</li>
+                    <li class="popupMissionsAndSets__set" data-set="naughtyVerbsMPR">irregular <br> verbs  M - R</li>
+                    <li class="popupMissionsAndSets__set" data-set="naughtyVerbsS">irregular <br> verbs  S</li>
+                    <li class="popupMissionsAndSets__set" data-set="naughtyVerbsTUW">irregular <br> verbs  T - W</li>
+                    <li class="popupMissionsAndSets__set" data-set="naughtyVerbsLast">irregular <br> verbs last</li>
+                    <li class="popupMissionsAndSets__set" data-set="naughtyVerbs99">irregular <br> verbs 99%</li>
+                    <li class="popupMissionsAndSets__set" data-set="naughtyVerbsBquestions">Irr. <br> questions B</li>
+                    <li class="popupMissionsAndSets__set" data-set="naughtyVerbsQuestionsAll">Irr. ALL <br> questions</li>
+                    <li class="popupMissionsAndSets__set" data-set="irregularVerbsV1LetterB">Irregular Verbs<br>letter B</li>
+                    <li class="popupMissionsAndSets__set" data-set="irregularVerbsB1">Irregular Verbs<br>LEVEL B1</li>
+                    <li class="popupMissionsAndSets__set" data-set="irregularVerbsB2">Irregular Verbs<br>LEVEL B2</li>
+                    <li class="popupMissionsAndSets__set" data-set="advice01">some advice</li>
+                    <li class="popupMissionsAndSets__set" data-set="advice02">should (not)</li>
+                    <li class="popupMissionsAndSets__set" data-set="jobs01">jobs and professions</li>
+                    <li class="popupMissionsAndSets__set" data-set="jobs02">job questions</li>
+                    <li class="popupMissionsAndSets__set" data-set="jobs03">jobs who?</li>
+                    <li class="popupMissionsAndSets__set" data-set="jobs04">job verbs</li>
+                    
+                    <li class="popupMissionsAndSets__set comingSoon" data-set="xx">доступ по паролю</li>
+                    <li class="popupMissionsAndSets__set comingSoon" data-set="xx">password is needed</li>
+                    <li class="popupMissionsAndSets__set comingSoon" data-set="xx">доступ по паролю</li>
+                    <li class="popupMissionsAndSets__set" data-set="adjectives02">Adjectives</li>
+                    <li class="popupMissionsAndSets__set green" data-set="lettersa1">Letters A1</li>
+                    <li class="popupMissionsAndSets__set yellow" data-set="numbersIntro12">12 or 20 ?</li>
+                    <li class="popupMissionsAndSets__set orange" data-set="lettersc2">Letters С2</li>
+                    <li class="popupMissionsAndSets__set" data-set="suchSo">Such or So?</li>
+                    <li class="popupMissionsAndSets__set" data-set="numbersa1">Numbers A1</li>
+                    <li class="popupMissionsAndSets__set" data-set="numbersa2">Numbers A2</li>
+                    <li class="popupMissionsAndSets__set" data-set="numbersb1">Numbers B1</li>
+                    <li class="popupMissionsAndSets__set" data-set="numbersb2">Numbers B2</li>
+                    <li class="popupMissionsAndSets__set" data-set="numbersspeak">Numbers Speak</li>
+                    <li class="popupMissionsAndSets__set comingSoon" data-set="xx"> ... </li>
+                    <li class="popupMissionsAndSets__set comingSoon" data-set="xx"> ... </li>
+                    <li class="popupMissionsAndSets__set blue" data-set="m010">Mission 010</li>
+                    <li class="popupMissionsAndSets__set orange" data-set="doesdo">Does Do</li>
+                    <li class="popupMissionsAndSets__set yellow" data-set="questions004">Questions 004</li>
+                    <li class="popupMissionsAndSets__set blue" data-set="m011">Mission 011</li>
+                    <li class="popupMissionsAndSets__set blue" data-set="m012">Mission 012</li>
+                    <li class="popupMissionsAndSets__set blue" data-set="m013">Mission 013</li>
+                    <li class="popupMissionsAndSets__set comingSoon" data-set="xx"> заблокирован </li>
+                    <li class="popupMissionsAndSets__set" data-set="sara001">Sara's day 1</li>
+                    <li class="popupMissionsAndSets__set" data-set="sara002">Sara's day 2</li>
+                    <li class="popupMissionsAndSets__set yellow" data-set="questions005">Questions 005</li>
+                    <li class="popupMissionsAndSets__set green" data-set="adjectives03">Adjectives 03</li>
+                    <li class="popupMissionsAndSets__set green" data-set="adjectives04">Adjectives 04</li>
+                    <li class="popupMissionsAndSets__set green" data-set="adjectives05">Adjectives 05</li>
+                    <li class="popupMissionsAndSets__set blue" data-set="m014">Mission 014</li>
+                    <li class="popupMissionsAndSets__set blue" data-set="m015">Mission 015</li>
+                    <li class="popupMissionsAndSets__set blue" data-set="m016">Mission 016</li>
+                    <li class="popupMissionsAndSets__set orange" data-set="compareadjectivesmore">MORE + adj</li>
+                    <li class="popupMissionsAndSets__set orange" data-set="compareadjectiveser">adject. +ER</li>
+                    <li class="popupMissionsAndSets__set orange" data-set="compareadjectivesb1">MORE+ or -ER</li>
+                    <li class="popupMissionsAndSets__set green" data-set="adjectives06">Adjectives 06</li>
+                    <li class="popupMissionsAndSets__set green" data-set="adjectives07">Adjectives 07</li>
+                    <li class="popupMissionsAndSets__set green" data-set="adjectives08">Adjectives 08</li>
+                    <li class="popupMissionsAndSets__set green" data-set="adjectives09">Adjectives 09</li>
+                    <li class="popupMissionsAndSets__set pink" data-set="adjectivesb1">Adjectives B1</li>
+                    <li class="popupMissionsAndSets__set orange" data-set="compareadjectivesb2">Adjectives B2</li>
+                    <li class="popupMissionsAndSets__set " data-set="naughtyB">Naughty Verbs B</li>
+                    <li class="popupMissionsAndSets__set " data-set="naughty1">Naughty Verbs 1</li>
+                    <li class="popupMissionsAndSets__set " data-set="naughty2">Naughty Verbs 2</li>
+                    <li class="popupMissionsAndSets__set " data-set="naughty3">Naughty Verbs 3</li>
+                    <li class="popupMissionsAndSets__set " data-set="naughty4">Naughty Verbs 4</li>
+                    <li class="popupMissionsAndSets__set " data-set="naughty5">Naughty Verbs 5</li>
+                    <li class="popupMissionsAndSets__set green" data-set="clothes01">Clothes01</li>
+                    <li class="popupMissionsAndSets__set green" data-set="clothes02">Clothes02</li>
+                    <li class="popupMissionsAndSets__set green" data-set="clothes03">Clothes03</li>
+                    <li class="popupMissionsAndSets__set " data-set="paperPlane1">Paper plane 1 </li>
+                    <li class="popupMissionsAndSets__set " data-set="feelGoodSong">Feel good</li>
+                    <li class="popupMissionsAndSets__set " data-set="paperPlane2">Paper plane 2 </li>
+                    <li class="popupMissionsAndSets__set " data-set="kickAss">Kick ass</li>
+                    <li class="popupMissionsAndSets__set " data-set="future01a1">Future</li>
+                    <li class="popupMissionsAndSets__set green" data-set="randomverbA1"> Random Verbs A1 </li>
+                    <li class="popupMissionsAndSets__set green" data-set="randomverbA2"> Random Verbs A2 </li>
+                    <li class="popupMissionsAndSets__set green" data-set="randomverbB1"> Random Verbs B1 </li>
+                    <li class="popupMissionsAndSets__set comingSoon" data-set="stickyVerbs">sticky verbs</li>
+                    <li class="popupMissionsAndSets__set" data-set="travelquestions">travel Q.</li>
+                    <li class="popupMissionsAndSets__set" data-set="winterquestions">winter Q.</li>
+                    <li class="popupMissionsAndSets__set" data-set="adjectivesCompareQuestions">adj. Q.</li>
+                    <li class="popupMissionsAndSets__set " data-set="tagquestions">TAG questions</li>
+                    <li class="popupMissionsAndSets__set " data-set="tagquestions01">Bomb</li>
+                    <li class="popupMissionsAndSets__set " data-set="up1">UP 1 <br>useful phrases</li>
+                    <li class="popupMissionsAndSets__set " data-set="up2">UP 2 <br>useful phrases</li>
+                    <li class="popupMissionsAndSets__set " data-set="up3">UP 3 <br>useful phrases</li>
+                    <li class="popupMissionsAndSets__set " data-set="up4">UP 4 <br>useful phrases</li>
+                    <li class="popupMissionsAndSets__set " data-set="up5">UP 5 <br>useful phrases</li>
+                    <li class="popupMissionsAndSets__set " data-set="up1_5">UP 1-5 <br>useful phrases</li>
+                    <li class="popupMissionsAndSets__set " data-set="idioms1">idioms 1</li>
+                    <li class="popupMissionsAndSets__set comingSoon" data-set="xx"> ... </li>
+                    <li class="popupMissionsAndSets__set" data-set="technologic1a1">Technologic A1</li>
+                    <li class="popupMissionsAndSets__set" data-set="technologic2a2">Technologic A2</li>
+                    <li class="popupMissionsAndSets__set" data-set="technologic3b1">Technologic B1</li>
+                    <li class="popupMissionsAndSets__set comingSoon" data-set="gerund">Gerund</li>
+                    <li class="popupMissionsAndSets__set comingSoon" data-set="xx">    доступ по       паролю</li>
+                    <li class="popupMissionsAndSets__set comingSoon" data-set="xx">    доступ по       паролю</li>
+                    <li class="popupMissionsAndSets__set comingSoon" data-set="xx">    доступ по       паролю</li>
+                    <li class="popupMissionsAndSets__set comingSoon" data-set="xx">грамматика </li>
+                    <li class="popupMissionsAndSets__set comingSoon" data-set="xx">    доступ по       паролю</li>
+                </li>
+                <li class="popupMissionsAndSets__set comingSoon" data-set="xx"> ... </li>
+                <li class="popupMissionsAndSets__set comingSoon" data-set="xx">    доступ по       паролю</li>
+            </li>
+            <li class="popupMissionsAndSets__set comingSoon" data-set="questions111clothesb1">Questions112</li>
+            <li class="popupMissionsAndSets__set comingSoon" data-set="xx"> ... </li>
+            <li class="popupMissionsAndSets__set comingSoon" data-set="xx"> ... </li>
+            <li class="popupMissionsAndSets__set comingSoon" data-set="xx">    доступ по       паролю</li>
+        </li>
+        <li class="popupMissionsAndSets__set comingSoon" data-set="xx"> ... </li>
+        <li class="popupMissionsAndSets__set comingSoon" data-set="xx">    доступ по       паролю</li>
+    </li>
+    <li class="popupMissionsAndSets__set comingSoon" data-set="xx"> ... </li>
+    <li class="popupMissionsAndSets__set green" data-set="santalapfart1b1">Santa's lap B1</li>
+    <li class="popupMissionsAndSets__set pink" data-set="santalapfart2b2">Santa's lap B2</li>
+    <li class="popupMissionsAndSets__set orange" data-set="santalapfart3c1">Santa's lap C1</li>
+    <li class="popupMissionsAndSets__set comingSoon" data-set="xx"> ... </li>
+    <li class="popupMissionsAndSets__set comingSoon" data-set="xx"> ... </li>
+    <li class="popupMissionsAndSets__set comingSoon" data-set="xx"> ... </li>
+    <li class="popupMissionsAndSets__set comingSoon" data-set="xx"> ... </li>
+    <li class="popupMissionsAndSets__set comingSoon" data-set="xx"> ... </li>
+    <li class="popupMissionsAndSets__set comingSoon" data-set="xx"> ... </li>
+    <li class="popupMissionsAndSets__set yellow" data-set="mirraLada"> Mirra and Lada </li>
+    <li class="popupMissionsAndSets__set yellow" data-set="roblox">Roblox</li>
+    <li class="popupMissionsAndSets__set comingSoon" data-set="xx"> ... </li>
+    <li class="popupMissionsAndSets__set comingSoon" data-set="xx"> ... </li>
+    <li class="popupMissionsAndSets__set comingSoon" data-set="xx"> ... </li>
+    <li class="popupMissionsAndSets__set comingSoon" data-set="xx"> ... </li>
+    <li class="popupMissionsAndSets__set comingSoon" data-set="xx"> ... </li>
+    <li class="popupMissionsAndSets__set comingSoon" data-set="xx"> ... </li>
+    <li class="popupMissionsAndSets__set yellow" data-set="spanish01"> Spanish 01 </li>
+    <li class="popupMissionsAndSets__set yellow" data-set="spanish02"> Spanish 01 </li>
+    <li class="popupMissionsAndSets__set yellow" data-set="spanish23"> Spanish 23 </li>
+    <li class="popupMissionsAndSets__set yellow" data-set="spanish24saberpoder"> Saber, Poder, Querer
+    </li>
+    <li class="popupMissionsAndSets__set yellow" data-set="spanish25"> Spanish 25 </li>
+
+    <li class="popupMissionsAndSets__set comingSoon" data-set="adjectivesbodya1"> ... </li>
+    <li class="popupMissionsAndSets__set comingSoon" data-set="upperBody"> ... </li>
+    <li class="popupMissionsAndSets__set comingSoon" data-set="lowerBody"> ... </li>
+    <li class="popupMissionsAndSets__set comingSoon" data-set="affirmations1">Affirmations 1</li>
+    <li class="popupMissionsAndSets__set comingSoon" data-set="affirmations2">Affirmations 2</li>
+    <li class="popupMissionsAndSets__set comingSoon" data-set="bodypartsa1">...</li>
+    <li class="popupMissionsAndSets__set" data-set="bodyA1">body parts A1</li>
+    <li class="popupMissionsAndSets__set comingSoon" data-set="animals">животные </li>
+    <li class="popupMissionsAndSets__set comingSoon" data-set="seasons"> сезоны </li>
+    <li class="popupMissionsAndSets__set comingSoon" data-set="bodypartsa2">body parts A2</li>
+    <li class="popupMissionsAndSets__set orange" data-set="twilightdiscussion"> TWILIGHT <br> / туайлайт / </li>
+    <li class="popupMissionsAndSets__set orange" data-set="twilightsuperpowers"> СУМЕРКИ <br> superpowers </li>
+    <li class="popupMissionsAndSets__set orange" data-set="speeddating"> speaking about <br> everything </li>
+    <li class="popupMissionsAndSets__set orange" data-set="twilightquiz"> quiz words <br> twilight </li>
+    
+    
+    
+    
+    
+    
+</ul>
+
+<div class="allSetsStyle popupMissionsAndSets__gameFindAPair">
+    <img src="./images/findApair.png">
+    <p>Training (find pairs)</p>
+</div>
+<div class="allSetsStyle popupMissionsAndSets__InputTypeOrWriteGame">
+    <img src="./images/writeAndType.png">
+    <p>Spell it plz.</p>
+                </div>
+                <div class="allSetsStyle popupMissionsAndSets__multipleChoiceQuiz">
+                    <img src="./images/Brain.png">
+                    <p> Tricky Quiz </p>
+                </div>
+                <div class="allSetsStyle popupMissionsAndSets__BenderWordOrderGame">
+                    <img src="./images/bender head.png">
+                    <p> Help Bender</p>
+                </div>
+                <div class="allSetsStyle popupMissionsAndSets__startGameTNT">
+                    <img src="./images/bomb.png">
+                    <p> TNT</p>
+                </div>
+                <div class="allSetsStyle popupMissionsAndSets__scrambledstartGameTNT">
+                    <img src="./images/earsmonkey.png">
+                    <p> what is it?</p>
+                </div>
+                <div class="allSetsStyle popupMissionsAndSets__slot-machine">
+                    <img src="./images/eyesmonkey.png">
+                    <p> Slot machine</p>
+                </div>
+                <div class="allSetsStyle popupMissionsAndSets__letsSpeak">
+                    <img src="./images/cards1.png">
+                    <p>Decks of cards</p>
+                </div>
+                <div class="allSetsStyle popupMissionsAndSets__linksToHWbutton">
+                    <img src="./images/brainexplosion.png">
+                    <!-- а -это ссылка, таргет - новая вкладка -->
+                    <a class="linktoHWclass" href="linktoHW" target="_blank">homework</a>
+                </div>
+                <div class="allSetsStyle popupMissionsAndSets__aNGPattern">
+                    <img src="./images/brainexplosion.png">
+                    <p>aNGPattern</p>
+                </div>
+                <!-- раскомментировать и скопировать кнопку ниже для новой игры-->
+                <!-- <div class="popupMissionsAndSets__copyThisForNewGames">
+                    <img src="./images/Brain.png">
+                    <p> ... </p>
+                </div> -->
+            </div>
+            <!-- <div class="quoteMainScreen"> quoteMainScreen  -->
+            
+            </div>
+            <img class="fryFuturamaMainScreenIntro none" src="./images/FryFuturama.png" alt="FryFuturama">
+            <!-- <img class="logo-special" src="./images/special logo hat square.png" alt="Logo Special"> -->
+            <!-- <img class="logo-special fryinspace" src="./images/fryinspace.png" alt="Logo Special"> -->
+            <!-- <img class="logo-special fryinspace" src="./images/special bulldog.png" alt="Logo Special"> -->
+            <img class="logo-special fryinspace" src="./images/special logo detective girl.png" alt="Logo Special">
+            <!-- <img class="logo-special fryinspace" src="./images/mainScreenSpy.png" alt="Logo Special"> -->
+            <!-- <img class="logo-special fryinspace" src="./images/twilight.png" alt="Logo Special"> -->
+            <!-- <img class="logo-special fryinspace" src="./images/mainScreenSpySpring.png" alt="Logo Special"> -->
+            <!-- <img class="logo-special fryinspace" src="./images/mainScreenSummer.png" alt="Logo Special"> -->
+            <!-- <img class="logo-special fryinspace" src="./images/pancakeday.png" alt="Logo Special"> -->
+            <!-- <img class="fryFuturamaMainScreenIntro" src="./images/special logo hat square.png" alt="FryFuturama"> -->
+            <img class="homerPicture" src="./images/Gomer.png" alt="homerPicture">
+            <div class="gameFindAPair">
+                <p class="gameFindAPair-info">найдено пар:</p>
+                <p class="timer"><span id="seconds">00</span>.<span id="tens">00</span></p>
+                <div class="gameFindAPair__container"></div>
+                <div class="gameFindAPairButtons">
+                    <button class="gameFindAPairButtonBackToMissions">вернуться к <br> выбору миссий</button>
+                    <button class="gameFindAPairButtonSkipThese">skip <br> пропустить </button>
+                    <button class="gameFindAPairButtonNotUsed">NotUsed</button>
+                </div>
+            </div>
+            <!-- Что такое template у Andrew уточнить-->
+            <!-- Не отображается на странице, например Карточка товара -->
+            <template class="template">
+                <p class="card"></p>
+            </template>
+            <!-- уточнить у Andrew почему здесь сперва нижнее подчеркивание а потом тоже самое в конце -->
+            <div class="oneDeckOfCards_cardForSpeakingGame hiddenDeck oneDeckOfCards">
+                <div class="oneDeckOfCards__topOfTheCard1">
+                    <p class="oneDeckOfCards__topOfTheCard1Value">информация на верней части карточки</p>
+                </div>
+                <!-- <img class="deckOfCardsPicture" src="./images/cards.png" alt="Deck of Cards picture"> -->
+                <div class="oneDeckOfCards__bottomOfTheCard1">
+                    <p class="oneDeckOfCards__bottomOfTheCard1Value">информация на нижней части карточки</p>
+                </div>
+            </div>
+            <div class="oneDeckButtons">
+                <!-- <button class="oneDeckButtonCheck">/прИвиэс/<br> Previous <br>предыдущая</button> -->
+                <button class="oneDeckButtonCheck">Back<br>назад</button>
+                <button class="oneDeckButtonNext">Next<br>Cледующ.</button>
+                <button class="oneDeckButtonPrevious">Shuffle<br>перемешать</button>
+                <button class="oneDeckButtonSwitch">Усложнить?<br>Make it harder?</button>
+                <p class="oneDeckButtonText"> Чтобы начать нажимай на колоду карт и читай синий текст</p>
+            </div>
+            <!-- добавляем фоновую музыку на старте - строчкой ниже создается монстр трэк неотключаемый даже 
+                при закрытии браузера поэтому закоменчу пока-->
+            <!-- <audio class="missionMusicBackground" src="./audio/mission background musicVolume50.mp3" autoplay loop></audio> -->
+
+            <!-- //ниже трек, который раньше не играл, а потом взял и заиграл я при этом ничего не делал -->
+            <audio class="audioTest" src="./audio/SantaB1.mp3"></audio>
+            <!-- wtf пока не понятно как сделать так чтобы можно было константе присваивать трек разный в java -->
+            <!-- <audio class="audioIconOnOffTrack" src="./audio/MissionMusicDefaultGoldfinger.mp3"></audio> -->
+            <!-- Пока звуки только со сторонних сайтов подгружаются, а не из папки со звкуами и на телефоне фотовая музыка не играет -->
+            <button class="audioIcon"></button>
+            <button class="audioIconOnOff"></button>
+            <button class="missionMusicBackgroundIconButton"></button>
+        </div>
+        <div class="gameBender none">
+            <div class="BenderWordOrderGameContainer-mistake">
+                <h3 class="BenderWordOrderGameTask-eng">Oops! Упс, минус жизька</h3>
+                <p class="BenderWordOrderGameTask-ru-mistake">Но без паники... Сравним ответы, <br>
+                    возможно вы всё верно
+                    составили :</p>
+                <p class="BenderWordOrderGameRussian-hint mistaken"></p>
+                <p class="BenderWordOrderGameSentence-correct"> Ответ робота: <br> A robot wants to drink and eat</p>
+                <p class="BenderWordOrderGameSentence BenderWordOrderGameUser-answer"> Ваш ответ: <br> A robot wants to
+                    eat and drink</p>
+                <div class="BenderWordOrderGameButtons">
+                    <button class="BenderWordOrderGameUnfair"> Нечестно!!! Мой ответ тоже верный, it is not a mistake.
+                        Верни жизьку! </button>
+                    <button class="BenderWordOrderGameFair"> Ok. Мой косяк! Погнали дальше!</button>
+                </div>
+                <button class="BenderWordOrderGameScreenshot hide"> Ваша жизнь восстановлена! Please, сделайте скриншот
+                    этого экрана и
+                    отправьте мне в телеграм. Я исправлю эту ошибку. После отправки скрина, нажмите здесь, чтобы
+                    продолжить.
+                    Click here to continue ! </button>
+            </div>
+            <div class="BenderWordOrderGameContainer-one">
+                <div class="BenderWordOrderGameLives">
+                    <img src="./images/lives.png" alt="BenderWordOrderGameLives">
+                </div>
+                <h3 class="BenderWordOrderGameTask-eng">Help a robot - помоги роботу <br> восстанови порядок слов или букв</h3>
+                <p class="BenderWordOrderGameRussian-hint BenderWordOrderGameHint-input"> Без русского перевода попробуй
+                    догадаться что за предложение</p>
+                <!-- <p class="BenderWordOrderGameSentence BenderWordOrderGameInput-sentence"></p> -->
+                <ul class="BenderWordOrderGameWords">
+                    <p class="BenderWordOrderGameTask-ru">Нажимай на слова, в правильном порядке. <br> (Для отмены -
+                        нажми
+                        на слово еще раз)</p>
+                </ul>
+                <p class="BenderWordOrderGameSentence BenderWordOrderGameInput-sentence"></p>
+                <p class="BenderWordOrderGameCorrect-counter"></p>
+                <div class="BenderWordOrderGameButtons">
+                    <button class="BenderWordOrderGameHint">Подсказка</button>
+                    <button class="BenderWordOrderGameCheat"> Не понимаю!</button>
+                </div>
+            </div>
+            <div class="BenderWordOrderGameButtons">
+                <button class="BenderWordOrderGameButtonBackToMissions none">Escape! сбежать!</button>
+            </div>
+            <img class="BenderWordOrderGameBender" src="./images/bender.png" alt="bender">
+        </div>
+        <template class="BenderWordOrderGameTemplate">
+            <li class="BenderWordOrderGameWord"></li>
+        </template>
+        <div class="gameTypeOrWrite none">
+            <div class="typeOrWriteGameMainScreen">
+                <h3 class="inputTitleEng"> Если очень хочется выполнить это задание, то
+                    сделай скриншот этого экрана и отправь Винсенту в сообщении в телеграм.</h3>
+                <input class="playerInputType" type="text" placeholder="введи английский перевод">
+                <div class="typeOrWriteGameButtons">
+                    <button class="typeOrWriteGameButtonSkip">skip пропустить</button>
+                    <button class="typeOrWriteGameButtonIDK">a hint подсказка</button>
+                    <button class="typeOrWriteGameButtonCompare">check, проверить</button>
+                </div>
+                <p class="typeOrWriteGame-counter">верно отвечено : 0</p>
+                <!-- <img class="InputTypeOrWriteGameFryFuturama" src="./images/FryFuturama.png" alt="FryFuturama"> -->
+            </div>
+            <!-- <p class="InfoUpdate"> скоро эта клавиатура будет работать, а пока нажимайте на строку выше и вводите перевод</p> -->
+            <!-- <div class="keyboard-base-mobile">
+                <div class="key keyQ">Q</div>
+                <div class="key keyW">w</div>
+                <div class="key keyE">E</div>
+                <div class="key keyR">R</div>
+                <div class="key keyT">T</div>
+                <div class="key keyY">Y</div>
+                <div class="key keyU">U</div>
+                <div class="key keyI">I</div>
+                <div class="key keyO">O</div>
+                <div class="key keyP">P</div>
+                <div class="key keyA key-span">A</div>
+                <div class="key keyS">S</div>
+                <div class="key keyD">D</div>
+                <div class="key keyF">F</div>
+                <div class="key keyG">G</div>
+                <div class="key keyH">H</div>
+                <div class="key keyJ">J</div>
+                <div class="key keyK">K</div>
+                <div class="key keyL">L</div>
+                <div class="key keyZ key-span-1">Z</div>
+                <div class="key keyX">X</div>
+                <div class="key keyC">C</div>
+                <div class="key keyV">V</div>
+                <div class="key keyB">B</div>
+                <div class="key keyN">N</div>
+                <div class="key keyM">M</div>
+                <div class="key keyDot">,</div>
+                <div class="key keySpaceBar key-span-2">Space - пробел</div>
+                <div class="key keyDel key-span-3">del←</div>
             </div> -->
+        </div>
+        <div class="TNTgameContainer none">
+            <div class="TNTgameMainScreen">
+                <h3 class="TNTgameInfo">🧨 До взрыва осталось: 🧨</h3>
+                <!-- <h3 class="TNTtimer"> 00:30 </h3> -->
+                <!-- <p class="TNTtimer"><span id="TNTminutes">00</span>:<span id="TNTseconds">00</span></p> -->
+                <p class="TNTtimer"></p>
 
-            <h3 class="task-eng">Oops! Упс, минус жизька</h3>
-            <p class="task-ru-mistake">Без паники, Агент... Сравни ответы и порядок слов, <br> возможно вы всё верно составили :</p>
-            <p class="russian-hint mistaken"></p>
-            <p class="sentence-correct"> Ответ робота: <br> A robot wants to drink and eat</p>
-            <p class="sentence user-answer"> Ваш ответ: <br> A robot wants to eat and drink</p>
+                <p class="TNTgameTaskHint"> Чтобы обезвредить бомбы напиши на английском: </p>
+                <p class="TNTgameTaskValue"> огурец /кьЮкамбэ/ </p>
+                <input class="TNTgamePlayerInputType" type="text" placeholder="не бойтесь ошибаться">
+                <div class="keyboard-base-mobile">
+                    <div class="key keyQ">Q</div>
+                    <div class="key keyW">w</div>
+                    <div class="key keyE">E</div>
+                    <div class="key keyR">R</div>
+                    <div class="key keyT">T</div>
+                    <div class="key keyY">Y</div>
+                    <div class="key keyU">U</div>
+                    <div class="key keyI">I</div>
+                    <div class="key keyO">O</div>
+                    <div class="key keyP">P</div>
+                    <div class="key keyA key-span">A</div>
+                    <div class="key keyS">S</div>
+                    <div class="key keyD">D</div>
+                    <div class="key keyF">F</div>
+                    <div class="key keyG">G</div>
+                    <div class="key keyH">H</div>
+                    <div class="key keyJ">J</div>
+                    <div class="key keyK">K</div>
+                    <div class="key keyL">L</div>
+                    <div class="key keyOpostrophy none">'</div>
+                    <div class="key keyZ key-span-1">Z</div>
+                    <div class="key keyX">X</div>
+                    <div class="key keyC">C</div>
+                    <div class="key keyV">V</div>
+                    <div class="key keyB">B</div>
+                    <div class="key keyN">N</div>
+                    <div class="key keyM">M</div>
+                    <div class="key keyQuestion">?</div>
+                    <div class="key keyDeleteLastSymbol key-span-4">←</div>
+                    <div class="key keyDel key-span-3">delete</div>
+                    <div class="key keySpaceBar key-span-2">Space - пробел</div>
+                </div>
+                <div class="TNTgameButtons">
+                    <button class="TNTgameButtonIDK">a hint подсказка</button>
+                    <button class="TNTgameButtonAnswer none">показать ответ</button>
+                    <button class="TNTgameButtonStartAgain none">Try again <br> /трай эгЭйн/
+                        <br>попробовать снова</button>
+                    <button class="TNTgameButtonCompare">click to deactivate / диЭктивэйт / <br>обезвредить</button>
+                </div>
+                <p class="TNTgame-counter">обезврежено бомб : 0</p>
 
-            <div class="buttons">
-                <button class="fair"> Ok. Мой косяк! Погнали дальше!</button>
-                <button class="unfair"> Нечестно!!! Мой ответ тоже верный, it is not a mistake. Верни жизьку! </button>
+                <!-- <img class="InputTypeOrWriteGameFryFuturama" src="./images/FryFuturama.png" alt="FryFuturama"> -->
             </div>
-            <button class="screenshot hide"> Ваша жизнь восстановлена! Please, сделайте скриншот этого экрана и отправьте мне в телеграм @vismyfriend Thank you! Мне нужна ваша помощь, чтобы сделать игру для вас еще лучше и обучить всю галактику Инглишу ! Click here !  </button>
 
         </div>
-        <div class="container-one">
-            <div class="lives">
-                <img src="./images/lives.png" alt="lives">
+        <div class="gameTrickyQuiz none">
+            <!-- уточнить зачем мы создавали эту кнопку, она же ничего не делает -->
+            <button class="gameTrickyQuizButtons areAmIsQuizOneButtonTwo none"> Quiz 2</button>
+            <div class="gameTrickyQuizContainer">
+                <p class="gameTrickyQuizRules"> Это хитренький кВИз от ВИнсента. <br> It's a tricky quiz from
+                    #vismyfriend. <br> Читайте вслух и нажимайте на правильный ответ.</p>
+                <button class="gameTrickyQuizButtons areAmIsQuizOneButtonOne none"> Do another variant пройти другой
+                    вариант</button>
+                <p class="gameTrickyQuizTask"></p>
+                <div class="gameTrickyQuizAnswersButtons">
+                    <!-- кнопку создадим в java s -->
+                </div>
+                <img class="redCap none" src="./images/special logo redTransparent.png" alt="Logo Special Red cap">
             </div>
-            <h3 class="task-eng">Help a robot speak English</h3>
-            <p class="task-ru">Нажимай на слова, в правильном порядке. <br> (Для отмены - нажми на слово еще раз)</p>
-            <ul class="words">
-             
-          
-            </ul>
-            <p class="sentence input-sentence"></p>
-            <div class="buttons">
-                <!-- <button class="delete"> delete</button> -->
-                <button class="hint">по-русски давай!</button>
-                <button class="cheat"> cheat</button>
-            </div>
-            <p class="russian-hint hint-input"> нажми 👆 на эту кнопку, если не можешь догадаться какое предложение можно составить из предложенных слов</p>
-            <p class="correct-counter"></p>
         </div>
-        <img class="bender" src="./images/bender.png" alt="bender">
+        <div class="aNGcontainer none">
+            <p class="aNGrules"> есливы видите эту надпись <br> отправьте мне скриншот</p>
+        </div>
+        <div class="scrambledTNTgameContainer none">
+            <div class="scrambledTNTgameMainScreen">
+                <h3 class="scrambledTNTgameInfo"> Времени прошло: </h3>
+                
+                <p class="scrambledTNTtimer"></p>
+
+                <p class="scrambledTNTgameTaskHint"> Кто-то перемешал буквы! Восстанови порядок :</p>
+                <p class="scrambledTNTgameTaskValue"> огурец /кьЮкамбэ/ </p>
+                <p class="scrambledTNTgameScrambledPhraseValue"> тутбудутперемешаны буквы </p>
+                <input class="scrambledTNTgamePlayerInputType" type="text" placeholder="печатай свой ответ сюда">
+                
+                <div class="scrambledTNTgameButtons">
+                    <button class="scrambledTNTgameButtonIDK">a hint подсказка</button>
+                    <button class="scrambledTNTgameButtonAnswer none">показать ответ</button>
+                    <button class="scrambledTNTgameButtonStartAgain none">Try again <br> /трай эгЭйн/
+                        <br>попробовать снова</button>
+                    <button class="scrambledTNTgameButtonCompare"> check - проверить</button>
+                </div>
+                <p class="scrambledTNTgame-counter">обезврежено бомб : 0</p>
+
+            </div>
+
+        </div>
+       
+
+
+        <p class="clickTest">v.0.2.11 </p>
+        <div class="gameLieToMe none">
+            <div class="gameLieToMeCard1">
+                <div class="gameLieToMeCard1top">
+                    <p class="gameLieToMeCard1topValue">информация на верхней части 1 карточки</p>
+                </div>
+                <div class="gameLieToMeCard1bottom">
+                    <p class="gameLieToMeCard1topbottomValue">информация на нижней части 1 карточки</p>
+                </div>
+            </div>
+            <div class="gameLieToMeButttons">
+                <button class="gameLieToMeButttonQuestion">Am I asking?</button>
+                <p class="gameLieToMeTextInfo">or</p>
+                <button class="gameLieToMeButttonAnswer">Am I answering?</button>
+            </div>
+            <div class="gameLieToMeCard1">
+                <div class="gameLieToMeCard1top">
+                    <p class="gameLieToMeCard1topValue">информация на верхней части 2 карточки</p>
+                </div>
+                <div class="gameLieToMeCard1bottom">
+                    <p class="gameLieToMeCard1topbottomValue">информация на нижней части 2 карточки</p>
+                </div>
+            </div>
+        </div>
+        </div>
     </main>
-   <template class="template"> 
-    <li class="word"></li>
-</template>
-<!-- делали такое!!! Find this-->
-<script type="module" src="./index.js"></script>
+    <!-- <button class="backToChoosingTheMissions2">  🔎 вернуться к выбору миссий 🕵️‍♀️ </button> -->
+    <script type="module" src="./scripts/app.js"></script>
 </body>
 
 </html>

@@ -1,0 +1,1653 @@
+/* 0001 подключаем normalize.css из папки vendor - что это и как это появилось - спросить у Эндрю */
+@import url(../vendor/normalize.css);
+@import url(https://fonts.googleapis.com/css?family=Neucha:regular);
+
+.body {
+    margin: 0 auto;
+    height: 100vh;
+    background-position: 72% 0;
+    background-size: cover;
+    font-family: neucha;
+    color: #000000;
+    background-color: #000000;
+    width: 310px;
+    user-select: none;
+}
+.wallpaper {
+    /* background-image: url(../images/springwallpaper.jpg); */
+    /* background-image: url(../images/background\ agent.jpg); */
+    background-size: cover;
+    /* background-color: #ffffff; */
+    background-position: right;
+    opacity: 0.4;
+    overflow: hidden;
+    z-index: -100;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0;
+
+    
+}
+/* для всех кнопок базовый дизайн (стили) устанавливаем, поэтому без точки здесь. Дополнительные стили уже у нужных кнопок отдельно пропишем*/
+
+button {
+    border-radius: 20px;
+    color: #000000;
+    cursor: pointer;
+}
+
+.header {
+    display: flex;
+    cursor: pointer;
+}
+
+.headerPageReoad {
+    /* margin: 8px auto; */
+    width: 316px;
+    text-align: end;
+    color: #515254;
+    /* padding-top: 5px; */
+   
+}
+
+
+.headerButtons {
+    color: #686a6e;
+    position: flex;
+    padding: 0;
+    top: 9px;
+    height: 35px;
+    border: none;
+    background-color: transparent;
+    border-color:transparent;
+   
+}
+
+.backToChoosingTheMissions {
+    text-align: center;
+    margin-left: 40px;
+    opacity: 0.7;
+   
+    
+    /* border: 2px solid #9e9d9ecc;
+    background-color: #bebcbcad; */
+
+    /* color: #000; */
+    
+}
+
+.quoteMainScreen {
+    
+        font-family:"Helvetica", sans-serif;
+        font-size:30px;
+        background: #3e3e3e;
+        color: #ffffff;
+        width: 200px;
+        height: 40px;
+        margin: 0 auto;
+        position: relative;
+        top: 40px;
+        padding: 20px;
+        text-align: center;
+        border-top: 3px solid #ababab;
+        border-bottom: 3px solid #ababab;
+        border-radius: 20px;
+        -moz-border-radius: 20px;
+        -webkit-border-radius: 20px;
+        box-shadow: 0px 2px 18px rgba(0, 0, 0, 0.53);
+        -moz-box-shadow: 0px 2px 18px rgba(0, 0, 0, 0.53);
+        -webkit-box-shadow: 0px 2px 18px rgba(0, 0, 0, 0.53);
+      }
+
+
+.resetPage {
+    text-align: center;
+    /* margin: 12px 0 0 1px; */
+    width: 135px;
+}
+
+.opacityZero {
+    opacity: 0;
+}
+
+
+.headerPageReoad.visible,
+.backToChoosingTheMissions.visible {
+    display: block;
+}
+
+.mainContainerIntroAnd2games.none {
+    display: none;
+}
+
+.gameBender {
+    margin-top: 15px;
+}
+
+.gameBender.none {
+    display: none;
+}
+
+.gameTypeOrWrite,
+.scrambledTNTgameContainer, 
+.TNTgameContainer {
+    position: relative;
+    margin-top: 15px;
+    height: 95vh;
+}
+
+.gameTypeOrWrite.none {
+    display: none;
+}
+/* стили дл TNT игры ниже */
+
+
+
+
+/* стили дл TNT игры выше */
+
+
+.gameTrickyQuiz.none {
+    display: none;
+}
+.aNGcontainer.none {
+    display: none;
+}
+
+.usedCheatsText.visible {
+    display: block;
+    /* margin: 0 0 5px; */
+    margin: 8px 0px 6px 0px;
+}
+
+.usedCheatsText {
+    display: none;
+    color: #7BE7FF;
+    text-align: center;
+}
+
+.usedCheatsText,
+.oneDeckButtonText,
+.gameTwoCardDecksText {
+    color: #7BE7FF;
+    display: none;
+    text-align: center;
+}
+
+.gameTrickyQuizTask {
+    color: white;
+    font-size: 25px;
+    text-align: center;
+}
+
+.gameTrickyQuizRules,
+.aNGrules {
+    color: rgb(0, 162, 255);
+    font-size: 20px;
+    text-align: center;
+}
+
+.starsEmoji {
+    margin: 0 auto;
+    display: none;
+    overflow: hidden;
+
+    /* 31px одно сердце = одна жизнь */
+}
+
+.starsEmoji.visible {
+    display: block;
+}
+
+
+
+.userSearchesForMission {
+    position: absolute;
+    display: flex;
+    align-items: center;
+}
+
+.userInput {
+    border-radius: 1rem;
+    margin: 18px 31px;
+    padding: 0.3rem;
+    background: rgba(255, 250, 240, 0.096);
+    box-shadow: 0px -2px 6px 1px #dddddd;
+    color: #80FF01;
+    opacity: .7;
+    text-align: center;
+    /* position: relative; */
+    width: 230px;
+
+}
+
+.oneDeckButtonText.visible,
+.gameTwoCardDecksButtonText.visible {
+    display: block;
+}
+
+.gameTrickyQuizAnswersButtons {
+    display: grid;
+    justify-content: center;
+    gap: 5px;
+    font-size: 20px;
+}
+
+.gameTrickyQuizButton {
+    width: 280px;
+    height: 55px;
+}
+
+.areAmIsQuizOneButtonOne {
+    background-color: greenyellow;
+    margin: 0 52px;
+    height: 63px;
+    border-radius: 41px;
+    width: 203px;
+    font-size: 19px;
+}
+
+.gameTrickyQuizButton.wrong {
+    background-color: red;
+}
+
+.blockedForSomeTime {
+    pointer-events: none;
+    /* чтобы нельзя было нажимать */
+}
+
+.gameTrickyQuizButton.correct {
+    background-color: greenyellow;
+}
+
+.oneDeckButtons.visible,
+.gameTwoCardDeckss.visible {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.oneDeckButtonCheck,
+.gameTwoCardDecksCheck {
+    border-radius: 26px;
+    width: 110px;
+    /* height: 40px; */
+    background: linear-gradient(143.84deg, rgba(237, 193, 193, 0.008) 14.48%, rgba(254, 254, 254, 0.2) 49.03%, rgba(162, 40, 40, 0.2) 82.47%), #f999d4;
+}
+
+.backTomainContainerIntroAnd2gamesbutton {
+    width: 110px;
+    border-radius: 26px;
+    background: linear-gradient(143.84deg, rgba(237, 193, 193, 0.008) 14.48%, rgba(254, 254, 254, 0.2) 49.03%, rgba(162, 40, 40, 0.2) 82.47%), #7BE7FF;
+}
+
+.oneDeckButtonNext,
+.gameTwoCardDecksNext {
+    width: 110px;
+    border-radius: 26px;
+    background: linear-gradient(143.84deg, rgba(237, 193, 193, 0.008) 14.48%, rgba(254, 254, 254, 0.2) 49.03%, rgba(162, 40, 40, 0.2) 82.47%), #80FF01;
+}
+
+.oneDeckButtonSwitch,
+.gameTwoCardDecksSwitch {
+    width: 110px;
+    border-radius: 26px;
+    background: linear-gradient(143.84deg, rgba(237, 193, 193, 0.008) 14.48%, rgba(254, 254, 254, 0.2) 49.03%, rgba(162, 40, 40, 0.2) 82.47%), #7BE7FF;
+}
+
+.oneDeckButtonPrevious,
+.gameTwoCardDecksPrevious {
+    border-radius: 26px;
+    width: 110px;
+    background: linear-gradient(143.84deg, rgba(237, 193, 193, 0.008) 14.48%, rgba(254, 254, 254, 0.2) 49.03%, rgba(162, 40, 40, 0.2) 82.47%), #FFF27B;
+}
+
+.typeOrWriteGameButtonIDK, 
+.scrambledTNTgameButtonIDK,
+.TNTgameButtonIDK,
+.TNTgameButtonAnswer {
+    font-size: 20px;
+    color: #000000;
+    background: linear-gradient(143.84deg, rgba(237, 193, 193, 0.008) 14.48%, rgba(254, 254, 254, 0.2) 49.03%, rgba(162, 40, 40, 0.2) 82.47%), #FFF27B;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    color: #000000;
+    width: 100px;
+    text-align: center;
+    padding: 0;
+}
+.scrambledTNTgameButtonAnswer,
+.TNTgameButtonAnswer {
+    background: linear-gradient(143.84deg, rgba(237, 193, 193, 0.008) 14.48%, rgba(254, 254, 254, 0.2) 49.03%, rgba(162, 40, 40, 0.2) 82.47%),#f999d4;
+
+}
+
+.typeOrWriteGameButtonSkip, 
+.scrambledTNTgameButtonStartAgain,
+.TNTgameButtonStartAgain {
+    font-size: 20px;
+    text-align: center;
+    color: #000000;
+    width: 195px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    background: linear-gradient(143.84deg, rgba(237, 193, 193, 0.008) 14.48%, rgba(254, 254, 254, 0.2) 49.03%, rgba(162, 40, 40, 0.2) 82.47%), #7BE7FF;
+}
+
+.typeOrWriteGameButtonCompare,
+.scrambledTNTgameButtonCompare,
+.TNTgameButtonCompare {
+    width: 150px;
+    width: 195px;
+    font-size: 20px;
+    color: #000000;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    background: linear-gradient(143.84deg, rgba(237, 193, 193, 0.008) 14.48%, rgba(254, 254, 254, 0.2) 49.03%, rgba(162, 40, 40, 0.2) 82.47%), #80FF01;
+}
+
+.BenderWordOrderGameButtonBackToMissions {
+    background: linear-gradient(143.84deg, rgba(237, 193, 193, 0.008) 14.48%, rgba(254, 254, 254, 0.2) 49.03%, rgba(162, 40, 40, 0.2) 82.47%), #FFF27B;
+}
+
+.body.BenderWordOrderGameBackgroundPicture {
+    background-image: url(../images/background.png);
+}
+
+.BenderWordOrderGameContainer-one {
+    background: #98bcd7;
+    border: 15px solid #F4F5FF;
+    border-radius: 35px;
+    margin: 0 auto;
+    position: relative;
+    padding-bottom: 15px;
+    max-width: 500px;
+    font-size: 25px;
+}
+
+.BenderWordOrderGameContainer-mistake {
+    background: #6e93ca;
+    border: 15px solid #FFD9BD;
+    border-radius: 35px;
+    position: fixed;
+    padding-bottom: 15px;
+    max-width: 500px;
+    width: calc(100% - 50px);
+    top: 40px;
+    left: 100%;
+    z-index: 2;
+    transition: all 0.5s ease-in-out;
+    font-size: 20px;
+}
+
+.BenderWordOrderGameContainer-mistake.show {
+    left: calc((100% - 530px) / 2);
+}
+
+.BenderWordOrderGameLives {
+    position: absolute;
+    overflow: hidden;
+    top: -22px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 3;
+    /* 31px одно сердце = одна жизнь */
+}
+
+.BenderWordOrderGameTask-eng,
+.inputTitleEng, 
+.scrambledTNTgameInfo,
+.TNTgameInfo {
+    /* margin: 20px 0 0; */
+    margin: 2px 0 0;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 17px;
+    text-align: center;
+    color: #000000;
+}
+.scrambledTNTgameInfo,
+.TNTgameInfo {
+    font-size: 18px;
+}
+.scrambledTNTgameTimer,
+.TNTgameTimer {
+    font-size: 50px;
+}
+.BenderWordOrderGameTask-eng {
+      margin: 20px 0 0;
+}
+.BenderWordOrderGameTask-ru {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    margin: 0;
+    color: #000000;
+}
+
+.BenderWordOrderGameTask-ru-mistake {
+    margin: 0 0 10px 0;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 17px;
+    text-align: center;
+    color: #000000;
+}
+
+.BenderWordOrderGameWords {
+    display: flex;
+    padding: 0;
+    /* margin: 15px; */
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3px;
+    justify-content: center;
+}
+
+.BenderWordOrderGameWord {
+    background: #FFF27B;
+    border-radius: 20px;
+    width: fit-content;
+    padding: 6px 10px 4px;
+}
+
+.BenderWordOrderGameWord.pressed {
+    background: #adaa95;
+    /* visibility: hidden; */
+    /* либо scale 0 */
+}
+
+.BenderWordOrderGameSentence {
+    background: #FFF;
+    border-radius: 7px;
+    min-height: 30px;
+    margin: 6px 15px;
+    padding: 6px;
+}
+
+.BenderWordOrderGameSentence.wrong {
+    color: red;
+}
+
+.BenderWordOrderGameSentence-correct {
+    background: #7ECA7C;
+    border-radius: 7px;
+    min-height: 30px;
+    margin: 5px 15px;
+    padding: 6px;
+    color: white;
+}
+
+.BenderWordOrderGameButtons,
+.TNTgameButtons,
+.scrambledTNTgameButtons,
+.typeOrWriteGameButtons {
+    /* margin: 10px 0 0 0; */
+    margin: 5px 0 0 0;
+    display: flex;
+    justify-content: space-evenly;
+    color: #000000;
+}
+
+.BenderWordOrderGameDelete {
+    background: linear-gradient(143.84deg, rgba(237, 193, 193, 0.008) 14.48%, rgba(254, 254, 254, 0.2) 49.03%, rgba(162, 40, 40, 0.2) 82.47%), #8C6199;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 25px;
+    width: 70px;
+    padding: 6px 10px 4px;
+}
+
+.BenderWordOrderGameUnfair {
+    background: linear-gradient(143.84deg, rgba(237, 193, 193, 0.008) 14.48%, rgba(254, 254, 254, 0.2) 49.03%, rgba(162, 40, 40, 0.2) 82.47%), #8C6199;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 25px;
+    width: 150px;
+    padding: 6px 10px 4px;
+    color: #000000;
+}
+
+.BenderWordOrderGameScreenshot {
+    padding: 6px 10px 4px;
+    background: linear-gradient(143.84deg, rgba(237, 193, 193, 0.008) 14.48%, rgba(254, 254, 254, 0.2) 49.03%, rgba(162, 40, 40, 0.2) 82.47%), #FFE601;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 25px;
+    margin-left: 13px;
+    margin-right: 13px;
+    transition: all 0.4s ease-in-out;
+    position: absolute;
+    top: 267px;
+}
+
+.BenderWordOrderGameScreenshot.hide {
+    max-height: 0;
+    padding: 0;
+    overflow: hidden;
+    border: 0;
+}
+
+.BenderWordOrderGameHint {
+    padding: 6px 10px 4px;
+    background: linear-gradient(143.84deg, rgba(237, 193, 193, 0.008) 14.48%, rgba(254, 254, 254, 0.2) 49.03%, rgba(162, 40, 40, 0.2) 82.47%), #AFD73E;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 25px;
+    color: #000000;
+}
+
+.BenderWordOrderGameCheat {
+    padding: 6px 10px 4px;
+    background: linear-gradient(143.84deg, rgba(237, 193, 193, 0.008) 14.48%, rgba(254, 254, 254, 0.2) 49.03%, rgba(162, 40, 40, 0.2) 82.47%), #80FF01;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 25px;
+    color: #000000;
+}
+
+.BenderWordOrderGameFair {
+    padding: 6px 10px 4px;
+    background: linear-gradient(143.84deg, rgba(237, 193, 193, 0.008) 14.48%, rgba(254, 254, 254, 0.2) 49.03%, rgba(162, 40, 40, 0.2) 82.47%), #80FF01;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 25px;
+    width: 100px;
+    color: #000000;
+}
+
+.BenderWordOrderGameRussian-hint {
+    /* margin: -10px 85px 0 15px; */
+    margin: 4px 3px 15px 3px;
+    padding: 6px 10px 4px;
+    background: #7ECA7C;
+    border: 3px solid #B7CC52;
+    border-radius: 18px;
+    color: #FFF;
+    min-height: 20px;
+    text-align: center;
+    font-size: 20px;
+}
+
+.BenderWordOrderGameRussian-hint.mistaken {
+    margin: 0 15px;
+}
+
+.BenderWordOrderGameCorrect-counter {
+    position: absolute;
+    bottom: -32px;
+    right: 4px;
+    color: #040404;
+    font-size: 15px;
+}
+
+.typeOrWriteGame-counter,
+.scrambledTNTgame-counter,
+.TNTgame-counter {
+    text-align: center;
+    bottom: 5px;
+    right: 4px;
+    color: #ffffff;
+    font-size: 15px;
+}
+.scrambledTNTgame-counter,
+.TNTgame-counter {
+font-size: 18px;
+}
+
+.scrambledTNTgameTaskValue,
+.scrambledTNTgameScrambledPhraseValue,
+.TNTgameTaskValue
+{
+ 
+    background: #FFF;
+    border-radius: 25px;
+    min-height: 30px;
+    margin: 4px 15px;
+    /* padding: 6px; */
+    padding: 3px;
+}
+.scrambledTNTgameTaskHint,
+.TNTgameTaskHint {
+    font-size: 20px;
+    padding: 0 13px 0 13px;
+    margin: 0;
+}
+.scrambledTNTgameTaskHint {
+    color: white;
+}
+.scrambledTNTgameTaskValue {
+    color: #596265;
+}
+.BenderWordOrderGameBender {
+    margin-left: calc((100% - 221px) / 2);
+}
+
+/* выше стили новой игры (BenderWordOrderGame) */
+/* ниже стили новой игры (InputTypeOrWriteGame) */
+
+.unclickable {
+    pointer-events: none;
+    /* нельзя никак взаимодействовать */
+}
+
+.typeOrWriteGameMainScreen, 
+.scrambledTNTgameMainScreen,
+.TNTgameMainScreen {
+    background: #98bcd7;
+    border: 15px solid #F4F5FF;
+    border-radius: 35px;
+    margin: 0px auto;
+    padding-bottom: 15px;
+    display: block;
+    font-size: 25px;
+    height: 260px;
+    text-align: center;
+}
+.scrambledTNTgameMainScreen,
+.TNTgameMainScreen {
+    height: 500px;
+ 
+}
+.scrambledTNTgameMainScreen {
+    background: none;
+    border: none;
+}
+.playerInputType,
+.scrambledTNTgamePlayerInputType,
+.TNTgamePlayerInputType {
+    padding: 6px 10px 4px;
+    background: linear-gradient(143.84deg, rgba(237, 193, 193, 0.008) 14.48%, rgba(254, 254, 254, 0.2) 49.03%, rgba(162, 40, 40, 0.2) 82.47%), #AFD73E;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 25px;
+    color: #000000;
+    width: 255px;
+    height: 29px;
+    margin: 35px 0 0 0;
+}
+
+.scrambledTNTgamePlayerInputType,
+.TNTgamePlayerInputType {
+margin: 0;
+width: 230px;
+text-align: center;
+font-size: 20px;
+
+
+}
+.underlinedText {
+
+    text-decoration: underline; 
+  
+}
+.popupMissionsAndSets.close {
+    -webkit-transform: scale(0);
+    -ms-transform: scale(0);
+    transform: scale(0);
+    display: none;
+}
+
+.popupMissionsAndSets {
+    -webkit-box-shadow: 0 0 20px 3px #000000;
+    box-shadow: 0 0 20px 3px #000000;
+    background: #d9d9d900;
+    /* background: #ed7daa1c; */
+    border-radius: 35px;
+    color: #ffffff;
+    position: relative;
+    /* margin: 50px 0; */
+}
+
+.popupMissionsAndSets::before {
+    display: block;
+    content: "";
+    position: absolute;
+    width: 3px;
+    height: 62%;
+    background-color: #515254;
+    border-radius: 6px;
+    bottom: 6px;
+    left: 6px;
+}
+
+.popupMissionsAndSets:has(.hide)::before,
+.popupMissionsAndSets:has(.hide)::after {
+    display: none;
+}
+
+.popupMissionsAndSets:has(.visible)::before,
+.popupMissionsAndSets:has(.visible)::after {
+    height: 40%;
+    bottom: 10px;
+}
+
+.popupMissionsAndSets::after {
+    display: block;
+    content: "";
+    position: absolute;
+    width: 3px;
+    height: 62%;
+    background-color: #515254;
+    border-radius: 6px;
+    bottom: 6px;
+    right: 6px;
+}
+
+.popupMissionsAndSets__description {
+    margin: 5px 10px;
+    height: 42px;
+    display: flex;
+    align-items: end;
+    /* align-items: stretch; */
+    padding: 0 22px;
+    text-align: center;
+}
+
+.popupMissionsAndSets__set {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    text-align: center;
+    min-width: 110px;
+    height: 46px;
+    left: 49.09px;
+    top: 304px;
+    background: #fff27b00;
+    border-radius: 20px;
+    -webkit-box-shadow: 0 2px 6px 1px #000000;
+    box-shadow: 0 2px 6px 1px #ffffff;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.popupMissionsAndSets__sets {
+    overflow-x: scroll;
+    gap: 15px 10px;
+    height: 100%;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-rows: 46px 15px 46px;
+    grid-template-rows: 46px 46px 46px;
+    grid-auto-flow: column;
+    /* padding: 20px 10px; */
+    padding: 73px 10px 20px;
+    list-style: none;
+    margin-left: 10px;
+    margin-right: 10px;
+
+    /* background: #98bcd7;
+    border: 15px solid #F4F5FF;
+    border-radius: 30px; */
+    /* border: ; */
+    /* margin: 0 auto;
+    position: relative;
+    padding-bottom: 15px;
+    max-width: 500px; */
+    /* font-size: 25px; */
+}
+
+.popupMissionsAndSets__sets.hide {
+    display: none;
+}
+
+.popupMissionsAndSets__title {
+    text-align: center;
+    font-weight: 400;
+    font-size: 30px;
+    padding: 0 10px;
+    margin: 8px;
+}
+
+.popupMissionsAndSets__title.greyText {
+    color: #a5a6a2;
+}
+
+.popupMissionsAndSets__gameFindAPair {
+    margin-top: 20px;
+}
+.allSetsStyle {
+    display: none;
+    gap: 10px;
+    margin-bottom: -10px;
+    cursor: pointer;
+}
+.allSetsStyle img {
+    max-width: 50px;
+}
+
+.allSetsStyle p, 
+.linktoHWclass {
+    background: #6cd00800;
+    border-radius: 20px;
+    margin: 0;
+    height: 40px;
+    width: 180px;
+    font-size: 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-shadow: 0 2px 6px 1px #000000;
+    box-shadow: 0 2px 6px 1px #ffffff;
+    color: #ffffff;
+}
+
+.popupMissionsAndSets__letsSpeak p {
+    color: #ffffff;
+    font-size: 20px;
+}
+
+.popupMissionsAndSets__gameFindAPair p {
+
+    font-size: 20px;
+}
+
+.allSetsStyle.show {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.popupMissionsAndSets__chosen-set {
+    display: none;
+    background: #fff27b00;
+    color: #a2a3a6;
+    border-radius: 20px;
+    margin: 10px 0 15px 58px;
+    height: 55px;
+    width: 180px;
+    font-size: 20px;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-shadow: 0 2px 6px 1px #000000;
+    box-shadow: 0 2px 6px 1px #ffffff;
+}
+
+.gameFindPairsButtonTry-again {
+    background: #80FF01;
+    color: #000000;
+    border-radius: 30px;
+    margin: 0 auto;
+    height: 65px;
+    width: 215px;
+    font-size: 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-shadow: 0 2px 6px 1px #000000;
+    box-shadow: 0 0px 6px 3px white;
+}
+
+.gameFindPairsButtonTry-again.hidden {
+    display: none;
+}
+
+.comingSoon {
+    color: #a2a3a6ab;
+    box-shadow: 0 2px 6px 1px#a2a3a6ab;
+}
+
+.green {
+    color: #80FF01;
+}
+
+.pink {
+    color: #ff61f7;
+}
+
+.red {
+    color: #990033;
+}
+
+.blue {
+    color: #6ca7fa;
+}
+
+.yellow {
+    color: yellow;
+}
+
+.orange {
+    color: orange;
+}
+
+.gameFindAPair {
+    background-size: 100% 100%;
+    display: none;
+    /* background-color: #000000; */
+}
+
+.InputTypeOrWriteGameFryFuturama {
+    z-index: -2;
+    margin: 0 auto;
+    width: 60%;
+}
+
+.fryFuturamaMainScreenIntro {
+    z-index: -2;
+    margin: 1px 10px;
+    width: 105px;
+    position: fixed;
+    bottom: 0;
+    right: calc(50% - 170px);
+}
+
+.fryFuturamaMainScreenIntro.noshow {
+    display: none;
+}
+
+.timer {
+
+    font-size: 35px;
+    color: #ffffff;
+    position: fixed;
+    margin: 0;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+    top: 10px;
+    width: 67px;
+    display: none;
+}
+.scrambledTNTtimer,
+.TNTtimer {
+    font-size: 45px;
+    color: #ffffff;
+    margin: 0 0 -10px 0;
+    /* padding-top: 5px; */
+    
+}
+
+.gameFindAPair__container {
+    -ms-grid-columns: 1fr 10px 1fr;
+    grid-template-columns: repeat(2, 1fr);
+    display: grid;
+    grid-auto-rows: 65px;
+    gap: 5px 5px;
+    grid-auto-flow: dense
+}
+
+.gameFindAPair-info {
+    color: #7BE7FF;
+    text-align: center;
+}
+
+.gameFindAPair.open {
+    display: block;
+}
+
+.gameFindAPairButtons {
+    margin: 25px 0 0 0;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.gameFindAPairButtons button {
+    width: 36.6%;
+}
+
+.oneDeckButtons,
+.gameTwoCardDecks {
+    display: none;
+    justify-content: center;
+    gap: 11px;
+    row-gap: 5px;
+    margin: 22.2px 0 0 0;
+}
+
+.gameFindAPairButtonBackToMissions,
+.gameFindAPairButtonNotUsed {
+    background: #6f6f6f74;
+    border-radius: 20px;
+    -webkit-box-shadow: 0 2px 6px 1px #000000;
+    box-shadow: 0 2px 6px 1px #000000;
+    font-size: 18px;
+    color: #000000;
+    display: none;
+}
+
+.gameFindAPairButtonBackToMissions {
+    font-size: 14px;
+    display: block;
+    background: #61af6974;
+    /* -webkit-box-shadow: 0 2px 6px 1px #ffffff;
+    box-shadow: 0 2px 6px 1px #ffffff; */
+}
+
+.gameFindAPairButtonSkipThese {
+    background: #7BE7FF;
+    border-radius: 20px;
+    /* -webkit-box-shadow: 0 2px 6px 1px #ffffff;
+    box-shadow: 0 2px 6px 1px #ffffff; */
+    font-size: 14px;
+    color: #000000;
+}
+
+.card.eng {
+    -ms-grid-column: 1;
+    grid-column: 1;
+    grid-row: auto;
+}
+
+.card.ru {
+    -ms-grid-column: 2;
+    grid-column: 2;
+    grid-row: auto;
+}
+
+.card {
+    margin: 0;
+    background: #0000007a;
+    color: #ffffff;
+    border-radius: 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    font-size: 18px;
+    text-align: center;
+    padding: 5px;
+    border: 3px solid #ffffff;
+    -webkit-transition: all 0.1s ease-in-out;
+    -o-transition: all 0.1s ease-in-out;
+    transition: all 0.1s ease-in-out;
+}
+
+.card.delete {
+    -webkit-transform: scaleY(0);
+    -ms-transform: scaleY(0);
+    transform: scaleY(0);
+}
+
+.card.select {
+    background-color: #7be7ffd1;
+}
+
+.card:active {
+    -webkit-transform: scale(0.9);
+    -ms-transform: scale(0.9);
+    transform: scale(0.9);
+}
+
+.scroll-left,
+.scroll-right {
+    background-image: url(../images/scroll\ stick\ short.png);
+    background-position: center;
+    background-size: 100% 100%;
+    position: absolute;
+    padding: 0;
+    width: 10px;
+    top: 180px;
+    height: 135px;
+    background-color: transparent;
+    border: 0;
+    display: none;
+}
+
+.scroll-left {
+    left: 12px;
+}
+
+.scroll-right {
+    right: 7px;
+    left: auto;
+}
+
+.homerPicture {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+    display: none;
+}
+
+.logo-special {
+    z-index: -2;
+    position: absolute;
+    object-fit: contain;
+    width: 100%;
+    bottom: 1px;
+    /* left: calc(50% - 150px); */
+    height: 220px;
+    margin: 0;
+    padding: 0;
+}
+
+.fryinspace {
+    /* left: calc(58% - 50px); */
+    color: #000000;
+}
+
+.redCap {
+    top: 328px;
+    left: calc(50% - 65px);
+    z-index: -2;
+    position: fixed;
+    bottom: 8px;
+    height: 109px;
+    margin: 0;
+    padding: 0;
+}
+
+.logo-special.hidden {
+    display: none;
+}
+
+.oneDeckOfCards {
+    background-image: url(../images/cards.png);
+    width: 280px;
+    height: 225px;
+    background-size: 85%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.oneDeckOfCards_cardForSpeakingGame {
+    top: 180px;
+    left: calc(50% - 111px);
+    transform: rotate(120deg);
+}
+
+.oneDeckOfCards_cardForSpeakingGame.hiddenDeck {
+    display: none;
+}
+
+.oneDeckOfCards__topOfTheCard1 {
+    border-bottom: dashed 1px #000;
+    display: none;
+    height: 50%;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 15px;
+    box-sizing: border-box;
+}
+
+.oneDeckOfCards__bottomOfTheCard1 {
+    display: none;
+    height: 50%;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 15px;
+    box-sizing: border-box;
+}
+
+.oneDeckOfCards__bottomOfTheCard1Value {
+    filter: blur(3px);
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.oneDeckOfCards__bottomOfTheCard1Value.Unblur {
+    filter: none;
+}
+
+.oneDeckOfCards__topOfTheCard1Value,
+.oneDeckOfCards__bottomOfTheCard1Value {
+    margin: 0%;
+    text-align: center;
+    font-size: 19px;
+}
+
+.oneDeckOfCards__topOfTheCard1Value img {
+    /* width: 50%; */
+    width: 130px;
+}
+
+.oneDeckOfCards.AnOpenCard {
+    animation: card-flip 0.4s ease forwards;
+    background-color: white;
+    height: 309px;
+    border-radius: 10px;
+    box-shadow: 0 0 5px 0 #000;
+    width: 70%;
+    margin: 0 auto;
+    background-image: none;
+}
+
+.oneDeckOfCards.AnOpenCard .oneDeckOfCards__topOfTheCard1,
+.oneDeckOfCards.AnOpenCard .oneDeckOfCards__bottomOfTheCard1 {
+    display: flex;
+}
+
+.missionMusicBackgroundIconButton {
+    width: 40px;
+    height: 40px;
+    background-color: transparent;
+    background-image: url(../images/MusicON2.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: none;
+    position: fixed;
+    right: 15px;
+    bottom: 19px;
+    z-index: 3;
+    display: none;
+}
+
+.missionMusicBackgroundIconButton.off:after {
+    content: "";
+    width: 50px;
+    height: 5px;
+    background-color: #1f32d7;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: rotate(-30deg);
+}
+
+.missionMusicBackgroundIconButton.hidden,
+.missionMusicBackgroundIconButton.off.hidden {
+    visibility: hidden;
+}
+
+.audioIcon {
+    width: 40px;
+    height: 40px;
+    background-color: transparent;
+    background-image: url(../images/MusicON2.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: none;
+    position: fixed;
+    right: 22px;
+    bottom: 12px;
+    z-index: 3;
+    visibility: hidden;
+}
+
+.audioIconOnOff {
+    width: 40px;
+    height: 40px;
+    background-color: transparent;
+    background-image: url(../images/MusicON2.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: none;
+    position: fixed;
+    right: 22px;
+    bottom: 12px;
+    z-index: 3;
+    visibility: hidden;
+}
+
+.audioIcon.visible,
+.audioIcon.off.visible {
+
+    visibility: visible;
+}
+
+.audioIconOnOff.visible,
+.audioIconOnOff.off.visible {
+    visibility: visible;
+}
+
+.audioIcon.off:after {
+    content: "";
+    width: 50px;
+    height: 5px;
+    background-color: #FA8181;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: rotate(-45deg);
+}
+
+.audioIconOnOff.off:after {
+    content: "";
+    width: 50px;
+    height: 5px;
+    background-color: #FA8181;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: rotate(-45deg);
+}
+
+
+
+.helloMusicStartButton {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(10, 1, 32, 0.925);
+    border: none;
+    position: fixed;
+    color: white;
+    font-size: 30px;
+    z-index: 5;
+}
+
+.helloMusicStartButton.invisible {
+    visibility: hidden;
+}
+
+.keyboard-base-mobile {
+    width: 100%;
+    /* position: absolute; */
+    /* bottom: 0; */
+    /* background-color: rgb(197, 197, 197); */
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: repeat(20, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-gap: 1px;
+    box-sizing: border-box;
+    padding: 5px 10px 10px 10px;
+    /* margin-bottom: 28px; */
+}
+
+.secretSet {
+    display: none;
+}
+
+.InfoUpdate {
+    color: #6ca7fa;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.key {
+    box-shadow: 0px 2px 3px rgb(12, 134, 226);
+    user-select: none;
+    border: 2px solid black;
+    /* border-radius: 5px; */
+    grid-column: span 2;
+    font-size: 20px;
+    padding: 10px 5px;
+    text-transform: uppercase;
+    text-align: center;
+    /* background: #122023; */
+    background: #aad1da;
+    border: 1px solid #596265;
+    /* padding: 0.5rem; */
+    border-radius: 0.5rem;
+    cursor: pointer;
+    font-weight: 700;
+    color: white;
+}
+
+.key:hover {
+    text-shadow: 1px 2px 60px #00BCD4, 0px 0px 60px rgba(0, 188, 212, .9), 0px 0px 60px rgba(0, 188, 212, .9), 10px 10px 60px rgba(0, 188, 212, .9);
+    box-shadow: 1px 2px 20px #00BCD4, 0px 0px 20px rgba(0, 188, 212, .9), 0px 0px 20px rgba(0, 188, 212, .9), 10px 10px 20px rgba(0, 188, 212, .9);
+    background-color: rgba(0, 187, 212, 0.517);
+    border: 1px solid #eeeeee;
+}
+
+.key-span {
+    grid-column: 2 / span 2;
+}
+
+.key-span-1 {
+    grid-column: 3 / span 2;
+}
+
+.key-span-2 {
+    grid-column: 7 / span 14;
+}
+
+.key-span-3 {
+    grid-column: 1 / span 6;
+}
+
+/* .key-span-4 {
+    grid-column: 1 / span 6;
+} */
+
+.clickTest {
+    bottom: 0;
+    left: 25px;
+    position: absolute;
+    color: #37393a;
+    margin: 0;
+}
+
+/* Начало стилей для новой игры */
+.gameLieToMe {
+    color: #00BCD4;
+}
+
+/* конец стилей для новой игры */
+
+
+/* ниже фон на сайте */
+
+/* уточнить как его отцентрировать */
+.fullscreen-bg {
+    overflow: hidden;
+    z-index: -100;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    opacity: 0.7;
+    user-select: none;
+    /* padding-top:45%; */
+}
+
+
+
+/* выше фон на сайте */
+
+/* //создал класс none, чтобы некоторые элементы изначально были сразу скрыты */
+/* можно м наоборот просто у каждого элемента в стилях прописать display: none  */
+/* поставил его в самоый конец, а ты были проблемы какие-то и иногда что-то не скрывалось (userSearchesForMission) */
+.none {
+    display: none;
+}
+
+
+@keyframes card-flip {
+    from {
+        transform: rotateX(0d);
+    }
+    50% {
+        transform: rotateX(90deg);
+    }
+    to {
+        transform: rotateX(0deg);
+    }
+}
+
+@media screen and (min-height:650px) {
+    .BenderWordOrderGameBender {
+        position: fixed;
+        left: 0;
+        bottom: 10;
+    }
+}
+
+@media screen and (max-width:520px) {
+    .BenderWordOrderGameContainer-one {
+        margin: 0 4px;
+    }
+    .BenderWordOrderGameContainer-mistake.show {
+        left: 0;
+        margin: 0 10px;
+    }
+}
+.main {
+    position: relative;
+    height: 100%;
+}
+/* @media screen and (min-width: 700px) {
+    .fryFuturamaMainScreenIntro {
+       
+        width: 245px;
+       
+    }
+} */
+@media screen and (min-height: 800px) {
+    .fryFuturamaMainScreenIntro {
+
+        width: 245px;
+
+    }
+}
+
+/*
+@media screen and (max-width: 700px) {
+    .homerPicture {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 700px) {
+    .gameFindAPair {
+        width: 400px;
+        height: 700px;
+        right: auto;
+        bottom: auto;
+        left: 15px;
+        top: 15px;
+    }
+
+    .gameFindAPairButtons {
+        bottom: auto;
+        top: 617px;
+        right: auto;
+        width: 400px;
+        left: 15px;
+        padding: 0;
+
+    }
+
+
+    .homerPicture {
+        width: 420px;
+    }
+}
+
+@media screen and (max-height: 640px) {
+    .card {
+        margin-top: 5px;
+        max-height: 50px;
+    }
+
+    .gameFindAPair__container {
+        padding: 45px 33px;
+        gap: 0 5px;
+        margin: 1px;
+        grid-auto-rows: 62px;
+        width: 270px; 
+
+        grid-template-columns: repeat(2, 1fr);
+        display: grid;
+        grid-template-areas: ;
+        padding: 2px 2px;
+        grid-auto-rows: 72px;
+        gap: 10px 10px;
+        grid-auto-flow: dense;
+        width: 291px;
+
+
+    }
+
+    .header__back {
+        display: none;
+    }
+
+    .gameFindAPair {
+        width: 300px;
+        height: 550px;
+        right: auto;
+        bottom: auto;
+        left: 15px;
+        top: 10px;
+
+    }
+
+    .gameFindAPairButtons {
+        bottom: auto;
+        top: 500px;
+        right: auto;
+        width: 300px;
+        height: 200px;
+        left: 15px;
+        padding: 0;
+
+    }
+
+
+
+}
+
+
+@media screen and (max-height: 415px) {
+    .card {
+        margin-top: 5px;
+        max-height: 20px;
+
+    }
+
+    .gameFindAPair__container {
+        padding: 35px 10px;
+        gap: 0 5px;
+        margin: 1px;
+        width: 500px;
+
+        -ms-grid-columns: 1fr 10px 1fr;
+
+        grid-auto-rows: 42px;
+
+    }
+
+    .gameFindAPair {}
+
+    .gameFindAPair.open {
+
+        background-image: none
+    }
+
+    .gameFindAPairButtons {
+        display: none;
+
+    }
+
+}
+
+@media screen and (min-width: 1000px) {
+    .gameFindAPair {
+        left: 20%;
+
+    }
+
+    .gameFindAPairButtons {
+
+        left: 20%;
+
+
+    }
+
+
+  
+
+
+
+}
