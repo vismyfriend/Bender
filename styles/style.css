@@ -37,6 +37,144 @@ button {
     cursor: pointer;
 }
 
+/* ниже стили для игры про множественный выбор */
+
+/* Ensure the body and html take up the full height */
+
+/* html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+   
+    font-size: 17px;
+    background-color: #f0f0f0; 
+} */
+
+/* Style the exercise areas */
+#multipleChoiceGame, #dropDownGame {
+    border: 2px solid #dddddd; /* Light gray border */
+    border-radius: 10px; /* Rounded corners */
+    padding: 20px; /* Padding inside the box */
+    background-color: #f9f9f9; /* Light background color */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    max-width: 600px; /* Max width to prevent it from being too wide */
+    text-align: center; /* Center text within the box */
+    margin-bottom: 20px; /* Space below the exercise area */
+}
+
+/* Image styles */
+#multiple-choice-image, #exercise-image {
+    height: 400px; /* Fixed height */
+    object-fit: cover; /* Ensure the image fits the dimensions */
+    display: block; /* Display the image */
+    margin: 0 auto 20px; /* Center the image and add space below */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+}
+
+#multiple-choice-result-image, #result-image {
+    width: 250px; /* Fixed width */
+    height: 250px; /* Fixed height */
+    object-fit: cover; /* Ensure the image fits the dimensions */
+    display: none; /* Hidden initially */
+    margin: 20px auto 0; /* Center and space above */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+}
+
+/* Style the buttons */
+.multipleChoiceGameButton {
+    background-color: #4CAF50; /* Green background */
+    color: white; /* White text */
+    padding: 10px 20px; /* Padding for size */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    font-size: 16px; /* Font size */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    transition: background-color 0.3s, box-shadow 0.3s; /* Smooth transition */
+    display: block; /* Block display for better control */
+    margin: 10px auto; /* Center button and add spacing */
+    width: 200px; /* Set a fixed width for uniform look */
+    text-align: center; /* Center text inside button */
+}
+
+/* Hover effect for buttons */
+.multipleChoiceGameButton:hover {
+    background-color: #45a049; /* Slightly darker green on hover */
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15); /* Slightly deeper shadow */
+}
+
+/* Disabled button state */
+.multipleChoiceGameButton:disabled {
+    background-color: #cccccc; /* Gray background when disabled */
+    cursor: not-allowed; /* Not allowed cursor */
+    box-shadow: none; /* Remove shadow */
+}
+
+/* Style for the dropdowns */
+select {
+    margin: 0 5px; /* Margin between dropdowns */
+    padding: 5px; /* Padding for dropdown size */
+    font-size: 16px; /* Font size */
+}
+
+/* Correct answer styling */
+.correct {
+    background-color: #d4edda; /* Light green */
+    color: #155724; /* Dark green */
+    box-shadow: 0 0 10px rgba(72, 180, 97, 0.6); /* Green glow */
+    box-shadow: 5px 5px 20px rgba(72, 180, 97, 0.6); /* twice bigger */
+    box-shadow: 5px 5px 40px 15px rgba(72, 180, 97, 0.6); /* Increased spread radius for thicker glow */
+
+}
+
+/* Incorrect answer styling */
+.incorrect {
+    background-color: #f8d7da; /* Light red */
+    color: #721c24; /* Dark red */
+    box-shadow: 0 0 10px rgba(220, 53, 69, 0.6); /* Red glow */
+    box-shadow: 0 0 20px 5px rgba(220, 53, 69, 0.6); /* twice bigger */
+    box-shadow: 0 0 20px 7px rgba(220, 53, 69, 0.6); /* twice thicker */
+
+}
+
+/* Styling the result display */
+.result {
+    margin-top: 20px; /* Space above the result */
+    font-weight: bold; /* Bold text for the result */
+    font-size: 18px; /* Slightly larger font */
+}
+
+/* Style for inline multiple-choice options */
+.multiple-choice {
+    display: inline-block; /* Keep options inline */
+    border: 1px solid #cccccc; /* Light gray border around options */
+    border-radius: 5px; /* Rounded corners */
+    padding: 5px; /* Padding inside the box */
+    margin: 0 5px; /* Space between options */
+    background-color: #ffffff; /* White background for contrast */
+    cursor: pointer; /* Pointer cursor on hover */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    transition: background-color 0.3s, box-shadow 0.3s; /* Smooth transition */
+}
+
+.multiple-choice:hover {
+    background-color: #f0f0f0; /* Slightly darker background on hover */
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15); /* Slightly deeper shadow on hover */
+}
+
+.multiple-choice label {
+    margin-right: 10px; /* Space between radio button and text */
+    cursor: pointer; /* Pointer cursor on label hover */
+}
+
+
+
+/* вышее стили для игры про множественный выбор */
+
 .header {
     display: flex;
     cursor: pointer;
@@ -154,6 +292,9 @@ button {
 .aNGcontainer.none {
     display: none;
 }
+.multipleChoiceStorycontainer.none {
+    display: none;
+}
 
 .usedCheatsText.visible {
     display: block;
@@ -182,6 +323,7 @@ button {
 }
 
 .gameTrickyQuizRules,
+.multipleChoiceStoryrules,
 .aNGrules {
     color: rgb(0, 162, 255);
     font-size: 20px;

@@ -5,7 +5,9 @@ import allWordsForGameTypeOrWrite from "./utils/TypeOrWrite.js"
 import allWordsForScrambledGame from "./utils/ScrambledGameData.js"
 import linksToHW from "./utils/linksToHW.js"
 import aNGPatternData from "./utils/aNGdata.js"
+import multipleChoiceStorydata from "./utils/multipleChoiceStorydata.js"
 import { aNGmechanic } from "./games/aNGmechanic.js"
+import { multipleChoiceStorymechanic } from "./games/multipleChoiceStorymechanic.js"
 import slotMachineData from "./utils/slotMachineData.js"
 import allSetsArray from "./utils/allSetsArray.js"
 import playList from "./utils/music.js"
@@ -17,6 +19,7 @@ import { gameTwoDecks } from "./games/gameTwoDecks.js"
 import benderWordOrderSentences from "./utils/benderWordOrder.js"
 
 const aNGPattern = document.querySelector(".popupMissionsAndSets__aNGPattern")
+const multipleChoiceStory = document.querySelector(".popupMissionsAndSets__multipleChoiceStory")
 const linksToHWbutton = document.querySelector(".popupMissionsAndSets__linksToHWbutton")
 const body = document.querySelector(".body")
 const logoSpecial = document.querySelector(".logo-special")
@@ -71,6 +74,7 @@ const bottomOfTheCard1Value = cardForSpeakingGame.querySelector(".oneDeckOfCards
 const gameTypeOrWrite = document.querySelector(".gameTypeOrWrite")
 const gameTrickyQuiz = document.querySelector(".gameTrickyQuiz")
 const aNGcontainer = document.querySelector(".aNGcontainer")
+const multipleChoiceStorycontainer = document.querySelector(".multipleChoiceStorycontainer")
 
 const mainContainer5gameTwoCardDecks = document.querySelector(".mainContainer5gameTwoCardDecks")
 
@@ -80,6 +84,7 @@ let currentSet = null
 
 let quizGameClass = null
 let aNGclass = null
+let multipleChoiceStoryclass = null
 
 
 
@@ -124,6 +129,7 @@ function doWeHaveThisGame(set) {
     if (linksToHW[set]) linksToHWbutton.children[1].href = linksToHW[set]
     if (!slotMachineData[set]) slotMachine.classList.remove("show")
     if (!aNGPatternData[set]) aNGPattern.classList.remove("show")
+    if (!multipleChoiceStorydata[set]) multipleChoiceStory.classList.remove("show")
 
 
 
@@ -152,6 +158,7 @@ dataFromEachPopupMissionsAndSets.forEach((set) => {
 function chooseSet(textTheNameOfTheChosenSet, set) {
 
     aNGPattern.classList.add("show")
+    multipleChoiceStory.classList.add("show")
     // console.log(set)
     chosenSet.textContent = textTheNameOfTheChosenSet
     // console.log("название миссии=", textTheNameOfTheChosenSet)
@@ -209,6 +216,7 @@ function backToTheVeryFirstScreen() {
 
 
     aNGPattern.classList.remove("show")
+    multipleChoiceStory.classList.remove("show")
     popupMissionsAndSetsDescription.textContent = "👈 choose your mission to practise 👉 / чУз ё мишн ту прЭктис /"
     userSearchesForMission.classList.remove("none")
     popupMissionsAndSetsSets.classList.remove("hide")
@@ -355,6 +363,16 @@ function aNGstart() {
     
 }
 aNGPattern.addEventListener("click", aNGstart)
+
+function multipleChoiceStoryGamestart() {
+    mainContainerIntroAnd2games.classList.add("none")
+    gameBender.classList.add("none")
+    multipleChoiceStorycontainer.classList.remove("none")
+    
+    multipleChoiceStoryclass = new multipleChoiceStorymechanic({ multipleChoiceStorydata: multipleChoiceStorydata[currentSet] })
+    
+}
+multipleChoiceStory.addEventListener("click", multipleChoiceStoryGamestart)
 
 
 
@@ -523,6 +541,7 @@ function finishGame() {
     copyThisForNewGames?.classList.remove("show")
     BenderWordOrderGameButton.classList.remove("show")
     aNGPattern.classList.remove("show")
+    multipleChoiceStoryPattern.classList.remove("show")
     linksToHWbutton.classList.remove("show")
     slotMachine.classList.remove("show")
     startGameTNTbutton.classList.remove("show")

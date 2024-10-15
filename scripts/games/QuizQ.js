@@ -2,6 +2,7 @@ export class QuizQ {
     // методы (те же функции только внутри класса)
     constructor(data) {
         this.quizAllQuestions = data.quizAllQuestions
+        console.log(data.quizAllQuestions)
         this.silcedQuestions = null
         this.task = document.querySelector(".gameTrickyQuizTask")
         this.rules = document.querySelector(".gameTrickyQuizRules")
