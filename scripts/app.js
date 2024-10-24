@@ -541,7 +541,7 @@ function finishGame() {
     copyThisForNewGames?.classList.remove("show")
     BenderWordOrderGameButton.classList.remove("show")
     aNGPattern.classList.remove("show")
-    multipleChoiceStoryPattern.classList.remove("show")
+    // multipleChoiceStoryPattern.classList.remove("show")
     linksToHWbutton.classList.remove("show")
     slotMachine.classList.remove("show")
     startGameTNTbutton.classList.remove("show")
