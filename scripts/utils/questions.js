@@ -144,7 +144,7 @@ const allQuestionsOneDeck = {
             ru:"это сделано моей бабулей"
             },
     ],
-    cookingverbs: [
+    cookingverbs1: [
         {
             id:1,
             eng:"pour  / пО /",
